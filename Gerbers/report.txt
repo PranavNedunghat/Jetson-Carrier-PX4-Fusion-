@@ -1,0 +1,16 @@
+Plotted to 'C:\Users\jlmao\OneDrive\Documents\GitHub\jetson-nano-baseboard\Gerbers\jetson-nano-baseboard-F_Cu.gbr'.
+Plotted to 'C:\Users\jlmao\OneDrive\Documents\GitHub\jetson-nano-baseboard\Gerbers\jetson-nano-baseboard-In1_5V0_SYS_VIN_Cu.gbr'.
+Plotted to 'C:\Users\jlmao\OneDrive\Documents\GitHub\jetson-nano-baseboard\Gerbers\jetson-nano-baseboard-In2_SINGAL_Cu.gbr'.
+Plotted to 'C:\Users\jlmao\OneDrive\Documents\GitHub\jetson-nano-baseboard\Gerbers\jetson-nano-baseboard-In3_SIGNAL_Cu.gbr'.
+Plotted to 'C:\Users\jlmao\OneDrive\Documents\GitHub\jetson-nano-baseboard\Gerbers\jetson-nano-baseboard-In4_GND_Cu.gbr'.
+Plotted to 'C:\Users\jlmao\OneDrive\Documents\GitHub\jetson-nano-baseboard\Gerbers\jetson-nano-baseboard-In5_3V3_SYS_SIGNAL_Cu.gbr'.
+Plotted to 'C:\Users\jlmao\OneDrive\Documents\GitHub\jetson-nano-baseboard\Gerbers\jetson-nano-baseboard-In6_GND_Cu.gbr'.
+Plotted to 'C:\Users\jlmao\OneDrive\Documents\GitHub\jetson-nano-baseboard\Gerbers\jetson-nano-baseboard-B_Cu.gbr'.
+Plotted to 'C:\Users\jlmao\OneDrive\Documents\GitHub\jetson-nano-baseboard\Gerbers\jetson-nano-baseboard-F_Paste.gbr'.
+Plotted to 'C:\Users\jlmao\OneDrive\Documents\GitHub\jetson-nano-baseboard\Gerbers\jetson-nano-baseboard-B_Paste.gbr'.
+Plotted to 'C:\Users\jlmao\OneDrive\Documents\GitHub\jetson-nano-baseboard\Gerbers\jetson-nano-baseboard-F_Silkscreen.gbr'.
+Plotted to 'C:\Users\jlmao\OneDrive\Documents\GitHub\jetson-nano-baseboard\Gerbers\jetson-nano-baseboard-B_Silkscreen.gbr'.
+Plotted to 'C:\Users\jlmao\OneDrive\Documents\GitHub\jetson-nano-baseboard\Gerbers\jetson-nano-baseboard-F_Mask.gbr'.
+Plotted to 'C:\Users\jlmao\OneDrive\Documents\GitHub\jetson-nano-baseboard\Gerbers\jetson-nano-baseboard-B_Mask.gbr'.
+Plotted to 'C:\Users\jlmao\OneDrive\Documents\GitHub\jetson-nano-baseboard\Gerbers\jetson-nano-baseboard-Edge_Cuts.gbr'.
+Info: Done.

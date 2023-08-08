@@ -1,0 +1,6 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "jetson-nano-baseboard-footprints")(type "KiCad")(uri "${KIPRJMOD}/lib/jetson-nano-baseboard-footprints")(options "")(descr ""))
+  (lib (name "3d-models")(type "KiCad")(uri "C:/Users/prana/jetson-nano-Px4 Fusion/lib/3d-models.pretty")(options "")(descr ""))
+  (lib (name "NxtPX4")(type "KiCad")(uri "C:/Users/prana/Downloads/NxtPX4-Hardware-f1765145df12a5abe1b3d7de596af98a56962559/NxtPX4-Hardware-f1765145df12a5abe1b3d7de596af98a56962559/NxtPX4_Pro_V1.2.0_Release/project_lib/NxtPX4.pretty")(options "")(descr ""))
+)

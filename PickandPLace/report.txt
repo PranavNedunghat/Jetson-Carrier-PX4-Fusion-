@@ -1,0 +1,6 @@
+Info: Front (top side) placement file: 'C:\Users\jlmao\OneDrive\Documents\GitHub\jetson-nano-baseboard\jetson-nano-baseboard-top.pos'.
+Info: Component count: 256.
+Info: Back (bottom side) placement file: 'C:\Users\jlmao\OneDrive\Documents\GitHub\jetson-nano-baseboard\jetson-nano-baseboard-bottom.pos'.
+Info: Component count: 70.
+Info: Full component count: 326.
+Info: File generation successful.
