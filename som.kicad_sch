@@ -2155,9 +2155,6 @@
   (junction (at 182.88 68.58) (diameter 0) (color 0 0 0 0)
     (uuid bebed407-9b9a-4bf7-9962-2d649e456dea)
   )
-  (junction (at 195.58 48.26) (diameter 0) (color 0 0 0 0)
-    (uuid bf464429-a835-489e-9df4-1950bffc62d8)
-  )
   (junction (at 40.64 48.26) (diameter 0) (color 0 0 0 0)
     (uuid c7293f79-eaa1-42dd-aa2a-2eca40f60817)
   )
@@ -2447,10 +2444,6 @@
   (wire (pts (xy 99.06 106.68) (xy 99.06 109.22))
     (stroke (width 0) (type default))
     (uuid 29e40ed8-3cd6-4515-ae5d-64e056ba1f33)
-  )
-  (wire (pts (xy 195.58 48.26) (xy 205.74 48.26))
-    (stroke (width 0) (type default))
-    (uuid 2a23dfa8-ce54-4055-ab67-5f6d43c372e8)
   )
   (wire (pts (xy 294.64 195.58) (xy 292.1 195.58))
     (stroke (width 0) (type default))
@@ -3268,7 +3261,7 @@
     (stroke (width 0) (type default))
     (uuid e472b983-5541-4d27-9dea-690215628088)
   )
-  (wire (pts (xy 190.5 48.26) (xy 195.58 48.26))
+  (wire (pts (xy 190.5 48.26) (xy 205.74 48.26))
     (stroke (width 0) (type default))
     (uuid e50651ad-2196-4fad-add7-109a42de25a3)
   )
@@ -9276,7 +9269,7 @@
     (property "Manufacturer" "N/A" (at -389.382 137.4648 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d4ff5622-f65a-48f2-a541-dbe3f40d5651))
+    (pin "1" (uuid 9f8b2428-47fe-4fd1-9973-9e7a16285f91))
     (instances
       (project "V1.1"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000610accab"

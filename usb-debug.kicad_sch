@@ -10625,7 +10625,7 @@
     (property "Value" "USB_A" (at 385.572 173.736 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Connector_USB:USB_A_TE_292303-7_Horizontal" (at 389.382 184.912 0)
+    (property "Footprint" "Connector_USB:USB_Micro-B_Molex_47346-0001" (at 389.382 184.912 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" " ~" (at 389.382 184.912 0)
