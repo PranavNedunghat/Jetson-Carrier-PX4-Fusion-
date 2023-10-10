@@ -5,14 +5,82 @@
   (paper "A3")
 
   (title_block
-    (title "Jetson Nano Baseboard")
-    (date "2023-04-19")
-    (rev "1.6.1")
-    (company "Antmicro Ltd")
-    (comment 1 "www.antmicro.com")
+    (title "Jetson Xavier/Orin NX + PX4 Board")
+    (date "2023-09-28")
+    (rev "1.0")
+    (company "NYU ARPL")
+    (comment 1 "https://wp.nyu.edu/arpl/")
   )
 
   (lib_symbols
+    (symbol "XT30PW-M:XT30UPB-M" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "U" (at -2.54 5.588 0)
+        (effects (font (size 1.27 1.27)) (justify left bottom))
+      )
+      (property "Value" "XT30UPB-M" (at -2.54 -4.826 0)
+        (effects (font (size 1.27 1.27)) (justify left bottom))
+      )
+      (property "Footprint" "XT30UPB-M:XT30UPB-M" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) (justify bottom) hide)
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "MF" "amass" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) (justify bottom) hide)
+      )
+      (property "Description" "\nSocket; DC supply; XT30; male; PIN: 2; on PCBs; THT; yellow; 15A; 500V\n" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) (justify bottom) hide)
+      )
+      (property "Package" "None" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) (justify bottom) hide)
+      )
+      (property "Price" "None" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) (justify bottom) hide)
+      )
+      (property "SnapEDA_Link" "https://www.snapeda.com/parts/XT30UPB-M/AMASS/view-part/?ref=snap" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) (justify bottom) hide)
+      )
+      (property "MP" "XT30UPB-M" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) (justify bottom) hide)
+      )
+      (property "Availability" "Not in stock" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) (justify bottom) hide)
+      )
+      (property "Check_prices" "https://www.snapeda.com/parts/XT30UPB-M/AMASS/view-part/?ref=eda" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) (justify bottom) hide)
+      )
+      (symbol "XT30UPB-M_0_0"
+        (rectangle (start -2.54 -2.54) (end 3.81 5.08)
+          (stroke (width 0.4064) (type default))
+          (fill (type background))
+        )
+        (polyline
+          (pts
+            (xy 1.27 0)
+            (xy 2.54 0)
+          )
+          (stroke (width 0.6096) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 1.27 2.54)
+            (xy 2.54 2.54)
+          )
+          (stroke (width 0.6096) (type default))
+          (fill (type none))
+        )
+        (pin passive line (at 7.62 2.54 180) (length 5.08)
+          (name "+" (effects (font (size 1.016 1.016))))
+          (number "P$1" (effects (font (size 1.016 1.016))))
+        )
+        (pin passive line (at 7.62 0 180) (length 5.08)
+          (name "-" (effects (font (size 1.016 1.016))))
+          (number "P$2" (effects (font (size 1.016 1.016))))
+        )
+      )
+    )
     (symbol "jetson-nano-baseboard:04671.25NR" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
       (property "Reference" "F" (at -1.905 2.54 0)
         (effects (font (size 1.27 1.27)))
@@ -1210,86 +1278,6 @@
         (pin passive line (at 0 -3.81 90) (length 2.794)
           (name "~" (effects (font (size 0 0))))
           (number "2" (effects (font (size 0 0))))
-        )
-      )
-    )
-    (symbol "jetson-nano-baseboard:DC_SOCKET" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-      (property "Reference" "J" (at -8.89 -5.842 0)
-        (effects (font (size 1.524 1.524)) (justify left bottom))
-      )
-      (property "Value" "DC_SOCKET" (at 0 0 0)
-        (effects (font (size 1.524 1.524)) hide)
-      )
-      (property "Footprint" "jetson-nano-baseboard-footprints:DC_SOCKET" (at 0 0 0)
-        (effects (font (size 1.524 1.524)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.524 1.524)) hide)
-      )
-      (property "Manufacturer" "Multicomp" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "MPN" "MJ-179PH" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "DC_SOCKET_0_1"
-        (polyline
-          (pts
-            (xy -7.62 2.54)
-            (xy -2.54 2.54)
-          )
-          (stroke (width 0.762) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 -2.54)
-            (xy -2.54 -2.54)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 -2.54)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 2.54)
-            (xy -5.08 2.54)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (pin passive line (at 5.08 2.54 180) (length 5.08)
-          (name "1" (effects (font (size 0.0254 0.0254))))
-          (number "1" (effects (font (size 1.778 1.778))))
-        )
-        (pin passive line (at 5.08 0 180) (length 5.08)
-          (name "2" (effects (font (size 0.0254 0.0254))))
-          (number "2" (effects (font (size 1.778 1.778))))
-        )
-        (pin passive line (at 5.08 -2.54 180) (length 5.08)
-          (name "3" (effects (font (size 0.0254 0.0254))))
-          (number "3" (effects (font (size 1.778 1.778))))
-        )
-      )
-      (symbol "DC_SOCKET_1_1"
-        (arc (start -6.096 -0.762) (mid -6.8512 -1.5121) (end -7.112 -2.54)
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (arc (start -4.064 -0.762) (mid -5.08 -0.4922) (end -6.096 -0.762)
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (arc (start -3.048 -2.54) (mid -3.3225 -1.5201) (end -4.064 -0.762)
-          (stroke (width 0.254) (type default))
-          (fill (type none))
         )
       )
     )
@@ -3082,11 +3070,11 @@
   (junction (at 100.33 170.18) (diameter 0) (color 0 0 0 0)
     (uuid 3e3293ff-1d19-43e6-b866-1fffd42a640a)
   )
+  (junction (at 48.26 137.16) (diameter 0) (color 0 0 0 0)
+    (uuid 3f8fe94f-6489-48ed-b912-46089e2b16f3)
+  )
   (junction (at 160.02 160.02) (diameter 0) (color 0 0 0 0)
     (uuid 4abf3e47-e621-4de6-921f-5e6819c9b51e)
-  )
-  (junction (at 217.424 256.667) (diameter 0) (color 0 0 0 0)
-    (uuid 522ec79f-eb01-4de3-b86e-3c39f98c1c17)
   )
   (junction (at 80.01 81.28) (diameter 0) (color 0 0 0 0)
     (uuid 52fa2755-4eee-47e4-bdc4-90f9a45cb90d)
@@ -3132,6 +3120,9 @@
   )
   (junction (at 147.32 119.38) (diameter 0) (color 0 0 0 0)
     (uuid 83ec957f-f741-49fa-9e06-1032334d6641)
+  )
+  (junction (at 171.069 119.38) (diameter 0) (color 0 0 0 0)
+    (uuid 854ce03d-bd25-485d-958d-209f4c1b191e)
   )
   (junction (at 279.4 87.63) (diameter 0) (color 0 0 0 0)
     (uuid 8cfc4174-6c53-443e-8c26-9f5f9d5bb349)
@@ -3196,6 +3187,9 @@
   (junction (at 92.71 45.72) (diameter 0) (color 0 0 0 0)
     (uuid c93e2691-ad7d-4e8d-ad3b-6e8e07b434de)
   )
+  (junction (at 158.75 119.38) (diameter 0) (color 0 0 0 0)
+    (uuid d62a8f60-82b4-4ceb-bd1e-95498569c23f)
+  )
   (junction (at 143.002 77.47) (diameter 0) (color 0 0 0 0)
     (uuid db071fa4-5fd7-4ddb-92a0-ac61da7f3de0)
   )
@@ -3246,6 +3240,10 @@
     (stroke (width 0) (type default))
     (uuid 0165ef25-564d-424d-a08e-5989229fa66f)
   )
+  (wire (pts (xy 211.582 254.127) (xy 219.71 254.127))
+    (stroke (width 0) (type default))
+    (uuid 0309599c-9f82-43f4-ad0e-3b2d73757698)
+  )
   (polyline (pts (xy 17.78 20.32) (xy 237.49 20.32))
     (stroke (width 0) (type default))
     (uuid 03b3c32c-9b0f-46af-b4ca-417be4232d55)
@@ -3270,6 +3268,10 @@
   (wire (pts (xy 99.06 53.34) (xy 92.71 53.34))
     (stroke (width 0) (type default))
     (uuid 061a3c74-75b0-43bb-8ec8-c0cacc8f4389)
+  )
+  (wire (pts (xy 158.75 119.38) (xy 171.069 119.38))
+    (stroke (width 0) (type default))
+    (uuid 0727c5df-4bff-42f4-bb55-c9569dfaec90)
   )
   (wire (pts (xy 207.01 186.69) (xy 207.01 193.04))
     (stroke (width 0) (type default))
@@ -3661,7 +3663,7 @@
     (stroke (width 0) (type default))
     (uuid 60bf01e9-9743-4c64-8e2d-1b0ed0d0edd4)
   )
-  (wire (pts (xy 45.72 137.16) (xy 62.23 137.16))
+  (wire (pts (xy 45.72 137.16) (xy 48.26 137.16))
     (stroke (width 0) (type default))
     (uuid 60f7a3d2-e272-4220-8298-cf20f88d0dee)
   )
@@ -3734,10 +3736,6 @@
     (stroke (width 0) (type default))
     (uuid 70181701-d0e6-4a17-9e9c-bdcb6f97e06c)
   )
-  (wire (pts (xy 213.614 259.207) (xy 217.424 259.207))
-    (stroke (width 0) (type default))
-    (uuid 704e0bbd-be87-4b1b-a78d-d0d7815247d3)
-  )
   (wire (pts (xy 93.98 190.5) (xy 102.87 190.5))
     (stroke (width 0) (type default))
     (uuid 710f4e35-5842-4acd-9bde-759ce2006080)
@@ -3753,10 +3751,6 @@
   (wire (pts (xy 86.36 163.83) (xy 85.09 163.83))
     (stroke (width 0) (type default))
     (uuid 73081e15-f01e-4a8d-8324-4dc1952da8ff)
-  )
-  (wire (pts (xy 217.424 256.667) (xy 231.14 256.667))
-    (stroke (width 0) (type default))
-    (uuid 747c9b52-d0af-4998-af34-c6f5f2a563f4)
   )
   (wire (pts (xy 160.02 152.4) (xy 160.02 160.02))
     (stroke (width 0) (type default))
@@ -3983,17 +3977,21 @@
     (stroke (width 0) (type default))
     (uuid b6e078dc-17f4-4921-bdde-3b7bf236149c)
   )
-  (wire (pts (xy 217.424 259.207) (xy 217.424 256.667))
-    (stroke (width 0) (type default))
-    (uuid b733de8b-5356-49e3-9234-75b8dbeb001d)
-  )
   (wire (pts (xy 341.63 80.01) (xy 341.63 85.09))
     (stroke (width 0) (type default))
     (uuid b7c7380f-6ebf-4654-b35e-c4f2eeaa06ed)
   )
+  (wire (pts (xy 211.582 256.667) (xy 231.14 256.667))
+    (stroke (width 0) (type default))
+    (uuid b8277400-9c00-4893-89c0-658e54e25110)
+  )
   (wire (pts (xy 252.73 245.11) (xy 252.73 250.19))
     (stroke (width 0) (type default))
     (uuid b8a2bfcf-1b06-4198-a20e-05b2ba0ba578)
+  )
+  (wire (pts (xy 171.069 119.38) (xy 181.737 119.38))
+    (stroke (width 0) (type default))
+    (uuid b91fc7ff-fecc-4cac-b5a0-137c011950f9)
   )
   (wire (pts (xy 313.69 82.55) (xy 313.69 97.79))
     (stroke (width 0) (type default))
@@ -4104,6 +4102,10 @@
     (stroke (width 0) (type default))
     (uuid d514e2e3-7ae3-45b1-a0c8-86dcbc7263f8)
   )
+  (wire (pts (xy 48.26 137.16) (xy 62.23 137.16))
+    (stroke (width 0) (type default))
+    (uuid d5694ea6-a62f-4310-ac12-a6a103eaf6db)
+  )
   (wire (pts (xy 96.52 86.36) (xy 96.52 87.63))
     (stroke (width 0) (type default))
     (uuid d5e7999d-6e93-4ed8-9398-d39f976e017f)
@@ -4123,10 +4125,6 @@
   (wire (pts (xy 91.44 63.5) (xy 99.06 63.5))
     (stroke (width 0) (type default))
     (uuid d8ef2697-ce04-4f76-b75c-3aec36ae6629)
-  )
-  (wire (pts (xy 213.614 254.127) (xy 219.71 254.127))
-    (stroke (width 0) (type default))
-    (uuid da06f581-2c88-4d63-9e53-c6cba71b6e61)
   )
   (wire (pts (xy 182.88 68.58) (xy 182.88 73.66))
     (stroke (width 0) (type default))
@@ -4240,13 +4238,13 @@
     (stroke (width 0) (type default))
     (uuid f6ac6186-2897-4603-bf3d-c50b5f8ee29d)
   )
+  (wire (pts (xy 48.26 137.16) (xy 48.26 139.827))
+    (stroke (width 0) (type default))
+    (uuid f6ac7421-0a9d-4980-a2e2-53706ba64dc7)
+  )
   (wire (pts (xy 153.67 60.96) (xy 162.56 60.96))
     (stroke (width 0) (type default))
     (uuid f7d37599-f962-4c2d-a62f-9d15f0b49bb7)
-  )
-  (wire (pts (xy 213.614 256.667) (xy 217.424 256.667))
-    (stroke (width 0) (type default))
-    (uuid f834edc7-06e0-4c8f-b53c-0dfe0bfa9341)
   )
   (wire (pts (xy 341.63 72.39) (xy 341.63 67.31))
     (stroke (width 0) (type default))
@@ -4277,410 +4275,6 @@
     (uuid ff433306-054c-4426-b4ed-31b3a2a24347)
   )
 
-  (image (at 38.735 272.415) (scale 0.4)
-    (uuid 322c48ab-5efc-46cc-82a7-862b7655a1ce)
-    (data
-      iVBORw0KGgoAAAANSUhEUgAABPcAAAGUCAYAAABZQseRAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
-      AAAuGAAALhgBKqonIAAAIABJREFUeJzs3U9rHNu/7/fP19k5N7/L4Uo7HDiBQ1BvyFzaDyCo9iOw
-      9uQSQkDtecDyI3B7HthtyNwtMsokW54kgwxcyijcyW4NMgu4m3AgPzjk574ccm4uJ/lmsFZbbbm7
-      1X9q1ao/7xc0tiV51VJ3dXXVp9b6LnN3AW1gZheSCkkXkgaSTiWdx2/PJc0kfZE0lVS6e1l3HwEA
-      AAAAAOpkhHtoMjMbSLqRNJR0ckATt5ImBH0AAAAAAKCLCPfQSHGU3ljSZUVNziXduPtdRe0BAAAA
-      AABkR7iHRjGzU0kjSa8TbeJe0tDdZ4naBwAAAAAAqM2L3B0AlszsRqFuXqpgTwojAT+b2TgGiQAA
-      AAAAAK3FyD1kZ2aFpImks5o3vZA0cvdxzdsFAAAAAACoBOEesomLZYwlvczbEz0o1OMrM/cDAAAA
-      AABgL4R7qF2cDnsj6W3uvjzxUSHkm+XuCAAAAAAAwC4I91ArMxsqjNY7ydyVbd5JGrv7l9wdAQAA
-      AAAA2IZwD7WIdfXGks4zd2VXC4VRfJPcHQEAAAAAANiE1XKRlJkNzGwi6ZPaE+xJYWThBzMrYzAJ
-      AAAAAADQOIzcQxIrdfVu1OwpuLu6VVhZd5a7IwAAAAAAAEuEe6hcrKs3knSWtyeVWyjU4hvl7ggA
-      AAAAAIBEuIcKmdmFQl29y9x9SWyuUI/vLndHAAAAAABAvxHu4WhxCu5Y0nXuvtTsXiHkm+buCAAA
-      AAAA6CfCPRzFzEbqTl29Q90qhHxfcncEAAAAAAD0C+EeDmJmVwqj9bpWV+9QC4UFN8a5OwIAAAAA
-      APqDcA97MbOBpIm6X1fvUHNJQ3cvc3cEAAAAAAB034vcHUA7mNmpmY0lfRbB3jZnkj6ZWRmDUAAA
-      AAAAgGQI9/AsM7uRNJP0OnNX2uRS0mczG8cFRwAAAAAAACrHtFxsZGaFQl2988xdabuFwoIbk9wd
-      AQAAAAAA3UK4h+/E6aRjSS/z9qRzHhRCvjJ3RwAAAAAAQDcQ7uGrOH30RtLb3H3puI8KId8sd0cA
-      AAAAAEC7Ee5BkmRmQ4XReieZu9In7ySN3f1L7o4AAAAAAIB2ItzruVhXbyRWwM1lLmlEPT4AAAAA
-      AHAIwr2einX1RpKus3YES/cKIV+ZuyMAAAAAAKA9CPd6ZqWu3o2YgttEtwoh3yx3RwAAAAAAQPMR
-      7vWImV0p1NU7y90XbLVQqMU3yt0RAAAAAADQbIR7PWBmFwqhHnX12mWusKruXe6OAAAAAACAZiLc
-      67A4BXcs6uq13b1CyDfN3REAAAAAANAsL3J3AGmY2Y2kmQj2uuBS0h9mNo6BLQAAAAAAgCRG7nWO
-      mRWSJqKuXlctFBbcGOfuCAAAAAAAyI9wryPMbKAQ6lFXrx/mkobuXubuCAAAAAAAyIdpuS1nZqdm
-      Npb0WQR7fXIm6ZOZlTHYBQAAAAAAPcTIvRYzs6HCghknmbuC/N5JGrv7l9wdAQAAAAAA9SHca6FY
-      V28s6TxzV9AsC4VVdSe5OwIAAAAAAOpBuNcicfrlWNLLvD1Bwz0ohHxl7o4AAAAAAIC0CPdawMxO
-      Jd1Iepu7L2iVjwoh3yx3RwAAAAAAQBqEew0X6+qNFBZQAPa1UBjtST0+AAAAAAA6iHCvoWJdvZFY
-      ARfVmEsaUY8PAAAAAIBuIdxrmFhXbyTpOmtH0FX3CiFfmbsjAAAAAADgeIR7DWJmI4XaeieZu4Lu
-      u1Wox8dUXQAAAAAAWoxwrwHM7EqhLhp19VCnhUItvlHujgAAAAAAgMMQ7mVkZhcKoR519ZDT30v6
-      r939LndHAAAAAADAfgj3MjCzU4W6eq8zdwVY9b9J+q/cfZq7IwAAAAAAYDeEezUzsxuFYI+6emiq
-      /1nSv6YeHwAAAAAAzUe4VxMzKyRNRF09tMP/J+m/d/f/MndHAAAAAADAZoR7iZnZQCHUo64e2ujP
-      kv4Ldy9zdwQAAAAAAHzvRe4OdJWZnZrZSNJnEeyhvf5W0iczu4tBNQAAAAAAaBBG7iVgZkOFVXCp
-      q4eueSdpTD0+AAAAAACagXCvQrGu3ljSeeauACktJN24+yR3RwAAAAAA6DvCvQrE6YpjSS/z9gSo
-      1YNCyFfm7ggAAAAAAH1FuHcEMzuVdBMfTMFFX91KGrn7LHdHAAAAAADoG8K9A8W6eiNJZ3l7AjTC
-      QmH0KvX4AAAAAACoEeHenszsQiHEYAVc4HtzhVF8k9wdAQAAAACgDwj3dhSn4I4lXefuC9AC9wr1
-      +Ka5OwIAAAAAQJcR7u3AzMaShqKuHrCvW4WQj6m6AAAAAAAkQLi3hZldSfpvJf1d7r4ALbZQqMU3
-      yt0RAAAAAAC65kXuDjSRmQ3MrJT0u6QfMncHaLsTSW/NbBYDcwAAAAAAUBHCvRVmdhqn4H7W44IZ
-      /ypjl4AuOZP0u5mVZjbI3BcAAAAAADqBcC8ysxtJM0mvV778T5L+lKVDQHddSvpsZuO4UA0AAAAA
-      ADhQ78M9MyvMbCrpN32/YMa/zdAloC9eS5rFYB0AAAAAABygtwtqxGmBY0kv8/YEgKQHhVV1y9wd
-      AQAAAACgTXo3ci/W1Rsp1NXbFuwt6ukRAEnnkj6Z2R31+AAAAAAA2F2vRu6Z2VBhtN7T6bfr/EXS
-      j0k7BGCTd5LG7v4ld0cAAAAAAGiyXoR7ZlZIGulxBVwAzbdQmKo7yd0RAAAAAACaqtPTcs1sYGYT
-      SZ+0X7D3D2l6BGAPJ5I+mFkZA3oAAAAAAPBEJ0fumdmppJv42GUK7lP/JOlPlXYKwLFuJY3cfZa7
-      IwAAAAAANEXnwj0zu1Koq3eWuy8AKrdQeH9Tjw8AAAAAAHUo3DOzC4WL/mPr6v29pL87vkcAEpor
-      1OO7y90RAAAAAAByan24F6fgjiVdV9Qkq+Q220LSv5H0P0qaxq9NJV1IOpVUSLoSIzf74l4h5Js+
-      +5MAAAAAAHRQq8M9Mxvp8Lp6aJe5Qr21yS4/HBdguJH0MmGf0By3CiEfU3UBAAAAAL3SynAvBjcT
-      VT8668+S/rbiNnGchUJoMznkPyfcV9A8C4VafKPcHQEAAAAAoC4vcndgH2Y2MLNS0ielCWv+gwRt
-      4nDvJA0ODfYkyd1Ldx9IeqMQ/qC7TiS9NbNZDHUBAAAAAOi8Vozci3X1RpJeZ+4K6nEvaejusyob
-      ZT/qnST7EQAAAAAATdL4cM/MhgoLZqSuq/dPkv6UeBvYbq4QxpQpN2JmA4WpuseurIx2eK9Qr5F6
-      fAAAAACAzmnstFwzK8xsKumD6lkw4x9q2AbWW0h64+6D1MGeJLn7zN0LSb8qBIrotteSZvFGAQAA
-      AAAAndK4kXtxVNVY9a9yysi9PLKvcsqqy73yoLC/lbk7AgAAAABAFRoT7sV6aDeS3ubuC2pxrxCy
-      THN3RPq6/40lXefuC2rxUWH/m+XuCAAAAAAAx2hEuBeny42UZgXcXfxF0o+Ztt03c4VQ5S53R9Yx
-      swuFkI96fP3wTtKYenwAAAAAgLbKWnMv1tUrFerq5Qr2JOkfM267LxaS3sW6eo0M9iTJ3aexHt8r
-      UY+vD95KmlKPDwAAAADQVllG7sW6eiM1Zwok9fbSulVYrXSWuyP7WJkqTj2+frhX2E/L3B0BAAAA
-      AGBXtYd7LF7QK50ISzIu8oI8WhlGAwAAAAD6qbZwz8yuFAKSnNNv12HUXvXmCuHIJHdHqmRmhcI+
-      fJ65K0hvoVCLb5S7IwAAAAAAbJM83GvBAgX/h6T/NHcnOqTzCxTE+mxjMfq0Dxq9AAwAAAAAAMnC
-      vVivbKzm1NXb5M+S/jZ3Jzrgo0IIMsvdkTqs1ON7m7svqMW9wv49zd0RAAAAAABWJQn3zOxGYcEM
-      RjZ134NC6FHm7kgOsR7fRM0dmYpq3Srs750dmQoAAAAAaJdKw71Yk2yi5tXVQ/UWCnX1xrk70gTs
-      +73Cvg8AAAAAaIwXVTRiZgMzKyV9UrvCjb/k7kBLvZc0INx45O6luw8kvVEIf9BdJ5J+M7NZDHUB
-      AAAAAMjmqHDPzE7NbCTps9o5LfH/zt2BlrmX9JO7My1xgxh4DhQCUHTbmaRPZlbG6dkAAAAAANTu
-      4HAvrhg6U7sXFPjn3B1oibmkX9y96MuCGcdw9y/ufiPpZ4VAFN12KemzmY3iQisAAAAAANRm75p7
-      cRraWNJ5ig6hURaSxu4+yt2RNjOzK4X3TJumrOMwC4UFNya5OwIAAAAA6Iedwz1WBe0dVgWtWJzC
-      fiNWke6DB0lDd5/m7ggAAAAAoNt2mpZrZjeSpiLY64N7ST+7+5Bgr1pxBORAIThFt51L+iMGugCA
-      I8SF226obwoAALDesyP3zGwi6bqW3tTrL5J+zN2JBpkrjNS7y92RPojT20ciMO+Djwqj+AjLAWBH
-      ZnYh6So+lqVgfnH3MlunAAAAGmpjuBcLw9+pu+HDXNRAk2JdPYXaeoQPNYsL04zEvth1D5IK3mMA
-      sFmsUVsoBHrrPhcJ9wAAANbYFu6V6m6wJ0l/L+nvcncis1tJI1bAzSsG6Tdq98rTeB4BHwCsiJ9/
-      q4HeczVpCfcAAADWWFtzL07F7XKwJ0k/5O5ARvcKJ8hDgr383P1LrMf3k8IUTnTTucIoWQDorZX6
-      eXcKJVI+KJR/YbEpAACAA303ci9OE/yQpTdIbaFQV2+SuyPYLNbjG+uxxhC65Y27E/IB6I0N9fMO
-      wcg9AACANb4J9+L0iJm4e9pF70RdvVaJQftYvB+7ZiHpglGzALpsh/p5hyDcAwAAWOPptFyChO75
-      KOkndx8R7LVLHGE5kPQ+b09QsROFRVQAoHPMbGRmXyT9Lum1WDAKAAAgua/hnpkNFGqeoBvmCne4
-      rxgh1F6xHt+NQj2++9z9QWWu4zQ1AOiaQtwoBgAAqNXqyL1Rrk5k8JfcHUhooVDTa8DUle5w95m7
-      F5J+UQhu0X43uTsAAAAAAGi/F9LXWnt9GrX3b3N3IJH3kgYU6+8udy/dfSDpjUKQi/a6jsdeAAAA
-      AAAOthy5d5W1FzjWvUJdvRvq6vVDDHAHkm4zdwXH4dgLAAAAADhKX8O9H3J3oCJzSb+6e0Fdvf6J
-      9fiGkn4W9fjaqm/HXgAAAABAxZbhXpGzExn8c+4OHGkh6V2sq3eXuzPIy92nsR7fr6IeX9sUuTsA
-      AAAAAGi3F7HmE6uatcetQl29Ue6OoFli0Hsh6Z2ox9cWJ9TdAwAAAAAc44VCGNA3/yp3Bw5wL+ln
-      dx9SVw+bxKm6I4X3NfX42qGPx2AAAAAAQEVePP8jnfRj7g7sYS7pVayrN83dGbSDu89iPb5fRD0+
-      AAAAAAA664Wo+dRUC4XplRfuPsncF7SUu5exHt8rMVUXAAAAAIDO6evIvab7qBDqjZiCiyrEgHig
-      EBgDAAAAAICOeCGpzN0JfPUg6Rd3v3L3We7OoFtW6vH9pBAgAwAAAACAlmPkXjMsFOrqXbh7mbsz
-      6LZYj+9KoR7fQ+7+AAAAAACAwxHu5fdO0oC6eqhbrMd3IemNqMcHAAAAAEArEe7lcy/pJ+rqITd3
-      HyvU43ufuSsAAAAAAGBPhHv1myvU1Suoq4emiPX4bhTq8d3n7g8AAAAAANgN4V59FpLeuPuAunpo
-      qliPr1CoxzfP3B0AAAAAAPAMwr16vFeoqzfO3RFgF7Ee30ChJiT1+AAAAAAAaKgfcneg4+4l3bj7
-      NHdHusTMBgo14oon3yolzZjuXB13H5nZWNJY0nXu/gAAAAAAgG8R7qUxVwj17nJ3pCtioHcj6UrS
-      2YYfext/di7pTtKYoO94ccGX4UrId5m5SwAAAAAAIGJabrUWkt7FunoEexUws4GZlZI+S3qtzcHe
-      qrP4s5/NrIzBII7k7tNYj++VqMcHAAAAAEAjEO5V51ahrt4od0e6wsxGCqHeMSPFLhVCvptKOgW5
-      +0TShajHBwAAAABAdoR7x7uX9Iu7D+P0RRzJzE7NbKI4zbYiv8U2UQF3/xKD7AuFYBsAAAAAAGRA
-      uHe4uaRX7l64e5m7Mx1TKs3iDdcEfNVy95m7DyX9Iukhc3cAAAAAAOgdFtQ4zDuFxRoYqVexGL6d
-      7/jj90/+vcv03WszUwykUJEYcF+Y2VBh0Y2TrB0CAAAAAKAnGLm3n4+SfnL3EcFe9WIw9NyIvXuF
-      EZMWR02uPkxhsYenod9T12Z2VUGX8USsxzdQCMABAAAAAEBifQ33/rznzz8o1NW7cvdZgv70npmd
-      Koz42mQh6U0M8SabfsjdJ3FF1zfavtjDJG4TFVupx/eTQiAOAAAAAAAS6Wu49+92/LmFwiixC+rq
-      JXejzVM5F5IKd98W/n0j/myhzQHfSdwmEon1+K4U6vHNc/cHAAAAAIAu6mu4t4v3kgbbRomhGnEE
-      3bagrXD36b7txv9TbPkRwr0auHvp7gM9P5oSAAAAAADsqa8LamwLNT9KumH6ba2utHnU3rtDgr0l
-      d5+a2TtJb9d8+8TMhgS49XD3cVwwZSTpdd7eoKvM7ELSqULtx0H88urfdzGV9OXJ36fUWm2uldf9
-      VNLFyreWX99XufL3WXx8OebzCMgt3kxdvj8G+va4eMh75YvCMXKpjH/27nhpZgM9PqeD+OVijybK
-      p39n1hByWTlWDLT//lzGP5fHhxnX1fszsyL+9el5zdN/72oWH0tl/LP1x+uV/XX1udn1M22mx+dl
-      qnCuV1bbw/qYwhv1U+Z+1G0u6ezJ1xYKod6k/u70m5ndSXq55lsLhdGTRx1w4ht+pvUB4i0r59Yv
-      LmgyEavqSqGeZ5m7E22y8iFe6PHE80L17E/3CseTqcIJUVnDNntvzYVGEb+1yyrpVVsoXrDER6kO
-      nBxXxcxKpXtdOF4+YyVkKvR4oTPQ9+e9dejk8TLeTFh9pDwOLY83Xx/cZEDV4j5dxMeF0hwvHvS4
-      H5d93483HKtPJZ3X3JVWXQvH88FCj9cBqc7/5/p2fy0TbKNyhHvBsqZbrw8yuZjZTOs/RN67eyVT
-      Z81srPWjxeZxyihqFk8kShHwcbH6jHj3stDjhVSOi9Rt7hX25Ts+R44XT3iXr3WhfMHEvuYK+0Gp
-      cCI4y9mZQ62MFjjUWOkuTt7o25FiVWvV6MyVC/JlgJcj7N5X646X8WLySuG53jbbpC4LPR5r7tp6
-      rDnEk9GnVWvV+/9Y8Ub78pFjn+7NflzzDYF9/erud7k7sU18/pb7at3h56p7SXdq8P7a13DvnyT9
-      aeXfP/fpYN40ZuYbvlVZ6BEvVtbu5+5uVWwD+yPgk0S4952VD/FCzToB2sVc4YN/wufKbmoaMZBD
-      K/eFLZ/JfXDv7kXuTmyycqOjUPuOjessFN4j46a9R1YCvSutn13SJA96PNbMMvclqW3n8xVo9Pu/
-      CvHz9kbNCKmfelCY1TNp+0j4J8fqumaWHOrHJj7f8UbvMD6aeF7YyP21r+Heqjf7rMKKasUPmT/W
-      fa/K0C2epP1lw7d/6vrJUJOZ2VDSh9z9yKj34V4DR0VUZa4wiqlRH/y5xRO2Qo+veVde722WQd+4
-      6Z83hHvNubhfCb6v1I0wb5tGHC8bHn7s4l7hOZzk7kgKhHuHiefaN8o76mkftwr7cZm7I7uI5zXL
-      c5qm3wxY9dHdr3J3YlV8j9+oXc9jY/bXvod7nT2It0WdI+rqGCGIwySu0dR0vdz/WjYq4lgLhbt7
-      jQ92UokXzEOFc462XFyk0uiLb8K9vOeFK1PlCjVztEJqWY6X8Xx0pO6ci8z1+Dx25uYS4d5+Yqg3
-      UnuPJfeSRk08T+7Iec2rppyLxM++kdr7XEoN2F+3rRrbB6PcHQAgifdib5jZVVw1eaYwYrPrwZ4U
-      Rn+8lvTZzEYx2Ow8M7sws3Gsq/qHwnPQ5pO2qlxK+mBms3jhhZ5bHhfN7Iuk3yVdq70X48daHi+n
-      dRwvzayIx6hP6k6wJ4X9562kmZlVUr8a7RH366nCeVabjyWXkj6ZWVlBPdijmdnAzG46dF5T5u5A
-      3FdLhc++Nj+X0rf7a6raoFv1OdybNfEuQA9trLFS5ZtiW1vsB/nF1+A+dz+Qhpmdxou0mR4vXNs4
-      3akKy4utYe6OpBBPfEdPTnzbfGGR0pkeQ75GTYtBeivh92qg19fj4jonSni8jM9/qRDqdfkYdSLp
-      t3icKXJ3BmnF862Jwn7d9qBk1TI0meS4QRpvwNxJ+izpN3XjmPGQczbJk321SzdWpPD7/BE/42vd
-      X/sc7v13uTsA6ZmpAkWFm9rU1qLCbeA4k9wdQLVi0DNRqHf5Vt04GarCiUKoU8Y6La335MSX13o/
-      Z5J+79L+gPXixcwwjqhZht8EetutHi+PvkiKr8FY4fnv2gXlNmcK4UjtF5uoR7xJNFO4UdBV1wqB
-      f/IbYvFYsRyl97u6N9Mk2wq5PdlXpcdR6EVdG+xzuPc/5O4Avto0YmtY4TY2tdWo1dl6rszdAVRj
-      ZYj9Z3X/g/sYlwof+q0ctdWDE9+6LfcHptB1TLzRMdZjOYIujaipy6WOvKiPF1hThQuuvlpebGaZ
-      MobqrQTWv6sfNwtOFG6IJdmHl7NNFI7XXRmlt07t4V58bu/Un31VWrmxUsfGehvuuTuhTnNsOric
-      V5F0xzY2nUhnu2uBb8Wh4YykbLn44dXFIfapLE9S27hq+526feKbw3IK3R2jazrlsxilV4Xl8XK0
-      739c+WzieBWegz+6Wh6iT+Jo71L9C6znCa/l7xRmIHT5eJ3y+VsrhrFT9fdG8Gszm6aeodHXcO8h
-      dwfwjW0B21G1FeL/nRy4bdSP0L39eA0P8zpOYQakcPKbrSAz0HBvd629FUdN9n203iYfWnpjCfom
-      LOnjSOBJ7g60XFnnxuKI61LcXDlX4pHTfQ33OrMkfBfEEVubpuae6cAALp70ldp8IPmYs5Ao0EXu
-      PhEjMA91He/qMWILUjgJJOAD1rtWeH9sPF72PPzYFTeWWiiOuizV7dFl20xyd6DlahvcEvfVPk3D
-      fc6JwmfXMEXjfQ338ES8s5nzAmK05XuX+17wrgR7207otm0zqbhK2yDX9oHEJrk70GLnov4kHi1P
-      Agn4gO8tA/Dvzg/jhdMf4oJyF9cEfO0R9+0P6u++zeCM4yzcvZZwb2VfxbeWC0UNq26YcK+nYrg0
-      NrOZmblCPZg/zMzN7Eus91NbkXd3LyW93/Ij5wqFlG+euUt7GouRz7Q92HtfZ62BuDreXXxuXeGE
-      83N8vmfxteDiDV0xyd2BljvnQgsrCPiAzb4L+LigPMg1U3Sbj31bEueYxyrr2Eisjdr3ffU5lQd8
-      P1TZGJovjhabaHux+xOFej8vzWwuaRjDt9RGkgptDuVOFIq3j+JKOzM9HqAKSRfxz+fuZD2oplF7
-      cTGPibbXGDhTqAXz2szuFZ7vWfLOAYm4+9TMHtSsqVALfV8PcKDm1v+4NrOZu49yd6RFlq/xLD6+
-      aOU13/Y5FoOBZXi2/PvyzwvlHyGxDPgKFgRDBeYK75Gpwvvkm/eKpNm285B4LjmI/1y+VwrlO6Yu
-      A75C0pXyXFA+6PH4U8avTd39u1JAK4vFrR5jBsr/mfnazKaxvAYahmBPUlgIgnrpx0n+/MV99W3q
-      7WywPBYvH2vP/1aOw4XC8bdQns+vD2amqo67pvCLfKqisRa5d/cidyfqFkfiTXTYRcp7d7+ptkff
-      iyMTSqW7kFpIuqgjPIt3QA8p4LxQCPh69+FlZqX6t8rqLzWF57Wq+ST0QeHitNTKReq+z+uaD/oL
-      5b/Y+rWpx4IGvF/vFV7zqcJF9CzVhmKYUcTHlfKFfQ+SinWBQVXi6PK+SnJ+mPk5nevb90mZcmOZ
-      3yv3qu+YtFC4SC4l3VXxnow3GQqF5y3ncebnpt5EiJ/Tqa5bG3t9GK+P/sjdDz3eRCu1ciNtdX+J
-      fV2OpF0G11XdKHuX+qZnQ85tZk8e0pPnWfruuR7o8bkeaPP564+JzyGGqj+EfpA0llQecy4YP7+u
-      JA1V//l/Jcddwr2eqOiNduvuw+N7s13CgG+hcFGU/IQlTqm7PrKZV327e9qAD9QcuhrunSqckFT9
-      Pq77QvVU4YO+UJ6LrYWkQcoTsUNleL/OFS6m73K/Z+LNsisdf5w/xEd3T1Y2I06lOcZQ6e5+3+rx
-      QieFWYrP3ZrDvYVi4KQjL3SqEN8rQ4UZIV2wvIisJNDbJp67D1X/edFc4UZ4Ez93CvUs3Kth4MNz
-      lp+9k2OvoeLvUsTHIceEn1If0zKc23xUeH3LKq9RV2YkLM9hzyU9uHuyEh8ZQuhbSeMU1/bxWDNS
-      vTeMKskpCknes0fp7urLQ+GN/aWi5+6mpj6fKly8V/aaSzqtqe83FfX5i8LJVfZ9qMZ9tWzA8aHu
-      R5H7eU/4ek4qeH5msZ2hQsiV+3caZthP73L/3hnfrzOFC+lGHgsV7o5XsZ/v+6jls7iB+0WR+/c7
-      8Dmp5TihMOo/++/bsPdKVY8y1/6ncK2W8n217jHOvc9seS6Svca5f781v2/V10P77vPDxL/bcI99
-      u5ZzoZrea2X83Wu5No2/10AJj2Hx9awqb9jl+RvU9LwVNb4Hp8fuEyyo0Q8TVXe3Z1THKq/u/sXD
-      nYV3Ckn2oRaS3rh74TXcgYzPzW8VNXeicFELtNXkwP/3oPDe/9ndB+4+dPeJN6AWZexHIekXhakT
-      dXhZ5wJHDfGgMCV54O433tApYu4+8zCi/SeFu+91qeWzGK3wTmE0y5U3eLT/ynvlZ4X3d1vMFUbY
-      F55pxLC7l/Fz542OOyfex+uVUhXIZ6L6pwfOFT5/i5THlHittzyn+klhYcVt+3eyvtToXuHctoi/
-      e22jY+MxuEy4iVLpR5euXtfPEm9L0tfj74XC8Te1cx25nxPudVwc0r/tQ+GjwkHG3N0UDq7vtvz8
-      iWpajEKSPNRVGCj0ab7Hf53H/zNw9zoDstGW7y30eBK+fL5/1vYLwsseXtSjI+JJxK7v27nCid1P
-      7n7h7qOS+BP2AAAgAElEQVSmBjrSNxdbr1TPxVbfgv47b2itwXXiSfOV6tsfuPkDSeE8qQk3Pnbl
-      7tOVm7dN9y7eYChzd0SS4vnsheoLRznGZGRmN6p/Ovtyn6/18zd+ht7o8Zrvqa4spFE2+dz2ULGc
-      R+oQ+kFhFkeW41Lc7s/aL484xMv43j8I4V73bQuGXsU7vV8PMvHgOlLYeTddoFzHefy1iHd2Ru4+
-      iP3adkK4OtpnVOcdkficXG/49nIe/Tcn4fEkd3lBuMmwsk4C9XvuQ/hWYVTEcoTWrIY+VSbe1a7j
-      YuvsmA971CPuD4XqCfheMrIGbRXPNX9VfSPR9vGgcC45yt2Rp+JnZKF6Rgqfx0ECqFmsXVbVTKBd
-      zNWAfX55zacw2GR1dsQkS4fwrHge8jbxZu4VrqNnibezVcxM6jjnP3h2BuFeh8WwadMdn/fbhlrH
-      nXe4pfni4I4dIYZhoy3fzznaZ1uQerWtX/G1uN3w7a4UoUY/TdZ8bXUU67ApoyIOFW+KXGjze7gq
-      o8TtowLxWD9QPaNrRjVsA0gijsQp1KyA71Y1Lb52qBiAXCn9Z47EMSaXSY3bulcYEdWYfT6eVxV6
-      vAEwydohrBWzhknizdzWVV5rF7EfhdKe453owOeVcK/btq2GM3ruP8eTrk07brKVdlpssOHrDzuG
-      F6NN32B0BtoqfgguRxjMFWpWLEfWzrJ1LIFYTyrlxdYJoyjaIe73V0ofWlzy+YA2i4FCkbsf0bt4
-      w6kRF5HPiZ85dYwaHybeBlbUNMVxqVHByVPxWnTQtfPFDrmRdJaw/Yd4nGuUmgK+y0Nm7BDuddum
-      qbP3exzEN9U3INz7XrHh6zvViIgfXG0qMg3saqzHOi7jpp5EViGehKRcaGOUsG1UaGX6XGqjGrYB
-      JBMDvm3lSerwKveUxAMVSn8TYZS4fURxKl7qKY5Lt00MTp7q8jljm9Wwrz6oOTd+vrMS8KU8/o72
-      LYVGuNdtKQO42mru9QwfYOicuPjEKHc/anSldAV3zxip1R4xtEi9cMAlK+ei7WJ5kjpXnF71KuWq
-      oCmtjBJOic+d+kxq2k4rgj002iRh2wtJjR9FvRLwpbL34mmEe91Wbvj6PsHcpp+d7dWTfqjiADSo
-      oA0AGcUP+2HCTaRsGxWLwXbqUdkstoIuGKr++nutDfaWYumX1PX3honb7z0zu5J0WcOmGjnVEe0R
-      w/6U++pNk2pAblPDTdzrfW7gEu710/keO8mmu4GzSnrSLZsOQsNd/nNcGWtT3YJG37kA8K3EF1up
-      R2mgeqnDt2Hi9oHk4o2RUY2bfNP2YG/FjdIGo1f7Tg/D3vYaoXOghRo81RGtkXJf/di243K8iZuy
-      JM/OzzfhXoc9s4jD5Ln/H4s4bgqbtrXdV5vCvbMdC2JueuMu2nL3AsA3RonaPYl3+NES8fM45Ykf
-      +wQ6wd3HSlfWYNVD3FYnxGA05e9zIm4sJRMXLUm5MMFSYxfPQDvEfTXVgi8LtfdmZcqbuC93LY1A
-      uNd9m+qXXJrZZNNduPjG/W3D/13suPprr8QVnTbdNf1t02pjZnZqZhNtHt6804IcAJolLqiQavRe
-      kahdpDNK3H6RuH2gLpMattHFgCN1WFkkbr/PRjVs4x2DBVCBlCHWqK3hc3xvvU+4iZ2ed8K97tv2
-      QX8taWpmN2ZWxMfQzEpJHw5ss++2PTcfzKyMz/Hy+b5RGPF3veX/TSrtIYA6pTpeMoKiZeJNsZQj
-      ktgn0BWcZx4gXhSnrL3HMSaBmkbtPfRsYTMkEEePpRq1N+/AaOqR0pVHeLlLWTXCvY6LFxPbVh87
-      Uxih9yk+Puj5ApmTKvrWUeUz379UeI6Xz/dv2v6B/pFRkkB7xTt5KRZTOGOF1FZKORKbfQKdEEOq
-      XCvntl3KY8xJrA+Nao1q2Mawhm2g+0YtbbsWNZRHGD33A4R7/TBUtSnyHUV1vxdPeKo8qWpz3QEA
-      j1JdbHGR1T6TxO0XidsH6lLm7kAbPVMipgpFwrZ7p6ZRe7dMx8Wx4s3DVCvkztu2iMYWY6U7Bl8/
-      l8EQ7vVATJELVbejnUsqCfgexWCvVCg4XIWFKHoLdAXhHiR9HcmZcmou+wS6oszdgRZLOXqPY0y1
-      honbXyj9au3oh6S19hK2XasaRu8Nt32TcK8n4gVFoeqmhxHwRQmCvQeFYI+7bEAHxPdyirt4RYI2
-      kV6ZsG0uvNEJCY+bfVAmbJtjTEXi9UOqkVBLYwYKoCLDRO0u1L3FIycJ294ashLu9chKwPdOu58w
-      bRth0PuAb8dgb9dRGguFlawuCPaAzknxnh4kaBPppTy+p75QBOrEudBhyoRtpyqm30epR9QtxOI0
-      qECcPl7VIJan7roWQLv7TOnqxp5tq31KuNcz7v4lrpY0kPRKYVWt+5UfeVDYGd9I+lHhDt220X69
-      Dfh2DPYeFJ7DHxWe04/69vm8V3gNXkkasJIV0FllgjZT1+lBGkkDCxbVQIcQ7h0gXlgmw6Iax4vX
-      TalXH2bUHqqScl/tagA9Sdj2xhsDPyTcKBosHuwn2mHHi8tel9p8t24Z8PWmRtwewd7qczJWdw9g
-      ALZLcmyMx90yRdtIw91LM0u5iYGkWcoNADXpxTllIvdKN5K3dzf0E7hSupFQS5PE7aMHYhD9MlHz
-      867OVnP3OzNbKM37fGPYysg9PGtlQQ5G8OngYA9Av3Xy5AUHS1lLbJCwbaBOs9wdaLFZwrYZuXe8
-      1KP2blOP4ERvMGrvcKlqCZ6Y2drXhXAPOyHgCwj2ADQMF1ntlDLsHSRsG6jTLHcHWmyWsO3OnufX
-      IfFIqKVJ4vbRHynDva4tpPFUyt+vWPdFwj3srO8BH8EegEMlnDrbuWMtAOBonIc2V+pRe3PKdaBC
-      KafkzhK13Qjufqd0MzUYuYfj9TXgI9gDAFSoTNg2ozkBpBwdXCRsuw+SL6SRuH30xKapnxXp+qi9
-      pTJRu2tXzSXcw976FvAR7AEAWqT1n7sA0GGpp+T2JTRBekXCtsuEbTdJmbDt4ukXCPdwkL4EfGY2
-      EMEegOYa5O4AAAB4XuKRUJL00PWpjqhVkbDtMmHbTVImbLt4+gXCPRxsz4BvUEOXKhX7fCeCPQDN
-      NcjdAQAAsJMicfuM2kMl4uCc80TNP/Tl2tndp0pXd++7UcCEezjKHgHf1MyKOvpUhdjXqbYf1Aj2
-      AAAAAOyiSNw+4R6qUiRsu0zYdhOVqRp+Wnfvh1QbQn+4+5cYhpXaHIadSPpkZu+V8IOnogDxStLr
-      Z36GYA8AAADAsxKPhJKkRRwlBFShSNh2mbDtJpoqXa3NQisLKBHuoRI7BnxSCM2eC86O8Slh20sE
-      ewAAAAB2VSRun1F7qNJ3K7FWqG8hdCnpbaK2C62skM20XFRmZYrux8xdSelWBHsAAAAAdpcyLJH6
-      NxoKaV0manfRw0VfUoaZ3xxXCPdQKXf/4u5XCiFY19y6+5BgDwAAAMAeisTtl4nbR088reNWsb6N
-      2lsOgJonav4sTvmXRLiHRNx9qG4FfLfxdwIAAACAfaQMTPo4GgrpEO5Vb5aw7a+vF+Eekolh2Lvc
-      /ajAG4I9AAAAAPsys4HC4oKp9DUwQRqDhG3PErbdZGXCtr+GeyyogaTcfWRmpcJQ9KLCpjfVAbiv
-      cBulpDtWngKwq5UVu5d/DuLj9PufBgAAPUC9PbRJkbDtvl5XpyzrNVj+hXAPybl7qYo/dMzMN2yr
-      qHI7ALAq3n0fKJyon+rxBChV4WEAANBuqcO9vgYmSGOQsO1ZwrabrJZFNQj3AAB4YiXEK/Q4+o4A
-      DwAA7ItwD21ylqrhHteGnCVsm3APAADpa5B3ER9F/DNlbRwAANAfSUtz9DgwQcUSr5SbasXYxnP3
-      mZmlav7rNQvhHgCgV2JdvEKPYR5BHgAASCXlyP+HhG2jf1IG0bOEbbfBQomuOczswt2nhHsAgE5b
-      CfMKMbUWAADUxMxSL6iVslA/+iflyL2+76tTpbsOOZUYuQcA6Jg4zfZKj4EeI/MAAEAOrJSLNkkZ
-      RlMbMp0LSSXhHgCg9WKNkKv4OM/cHQAAAKBtBrk70GGM3MPxnqz6KIX57jN3L3P0B+vFqYMDPR5U
-      S4XXaZalQ0DDxWPbMD6SrewFAABwoCJx+2Xi9tEvg4Rt931absrfn3Cvy2J9h6GkG2246DWzhaQ7
-      SSMCpDxiODFSGG30dOrg2/gzc0ljSRN37/tBET0Xj21XCsc2RugBAAAAzce03HQuJOlF7l6genEE
-      2FTSb9o+muVE0rWkz2Y2St8zrDKzsaTPCq/BtppgZwqv5TS+tkDvmNmFmU0URh5/EMEeAABovkHi
-      9meJ20e/DHJ3oMOSD9Ih3OsYMxtK+qT9p6i9NbNpDSs69Z6ZnZrZVNLrPf/rmaRP8TUGesHMCjMr
-      Jf2h54NwAACAJhmkbJzZV6gYZW7SST5ykWm5HRJDnw9HNHGuULch9apOvRXD01LHjTr6YGZy90kl
-      nQIaKB7PRmr3ScZ9/LOMf77N1A8AAAAgJ8pLpXMhEe51RpyueUywt3RuZmN3v6mgLXxvpGqmE34w
-      s6m7U7sAnWJmVwo1JtsS6s0VpsSU8c+ZpOm6+phmRrgHAACqssjdAWBXXLcmdSIR7nXJ5JnvL/Q4
-      FPRU2wOm12Y24Q1YrRjAPjcV90GPdzUutH0K4kSMskRHxPfHSOmWiK/CvcJxdCpWHAcAAM9Lea7O
-      tRoqQ3mu9iPc64A4fW3TKJeFwmq44yf/p1AYHbMp5BsprEiJ6mwbDfkg6eZpWGBmNwqvxbqQ79zM
-      rtz9rrIeAjWLJxJjhXp6TTJXGI03lVRyswMAAByAWsFoCwaNtBzhXjdsCuEWkop1F6XuXsaAr9T6
-      gO+lmZ2um1qG/ZnZQNLLDd++d/di3TfcfbyymMA6Q0mEe2ilOAV3omac+C4U3kulQpg3y9obAAAA
-      AF0xS70Bwr1u2BQajbeNNnH3L/Hieqr1F9elmbUq3ItBWBNtGua80DMjJN19ambvtL4Y/6bXHmis
-      OFpvovz774NCoHfHyDwAAAAAKbj7zMySboNwr+Xi6LtNxlu+J+nrTnan9VPiqlj4oW5Nrte1zt2O
-      oyPH2rDSppldEEygLeIx6075Rus9KASLd4zOAwAAANB2Znb6IncnkMz9HlNqCYbyKXf5ofha3m/4
-      NsVP0QpmNpL0SfUHewtJ7yX97O4X7j4m2AMAAADQEReM3IP0uDor6sdzj87LuGjGXGFBml1HyAIA
-      AABA6zByr7v2We2GlXHyKfb42bZNOQaWwV6peoO9e0m/uPvA3ScEewAAAAC6jHCv/WYbvn5iZsPn
-      /nO88H7255DMVXwNtnrmtZxV1hugQivBXl31O+cKoV7h7mVN2wQAAACArJiW23JxQYy5pLM13x6b
-      2XPT0cbaXP/qjZpbj+/Thq//Umsvdnch6bc1Xz9TeA2Gm/6jmQ20eXGUObXD0EQ1B3sLSSN3f3YR
-      IQAAAADomCnhXjfcSXq95usnkqZmNnw6imWHGljzJl8ob1pGusGjdcq4mMC6IPU6/j43T4PYHVYW
-      vauwj0Alag72PkoaMvUWAAAAQBPtMlvvGO7+hXCvG8ZaH+5JYWTYJzN70GMQNJB0pe0rVk6q6hy+
-      Gkt6u+F71wpTdO/0OM32Ss+HI40NYNFrE6UP9hYKoR4BNwAAAIAmS77OAeFeB8Spue+0OTiSwoX2
-      rhfbD+4+OrpjeGo5/XbdFGophK37LDrwjim5aJo4QvVl4s08SLpi/wcAAAAAFtTojBjGPVTQ1EIs
-      sJFEnDZ4pfAcH+ueABZNY2ZX2n6ToQq3kgqCPQAA0HOXuTuATpnl7gCOQ7jXLYWOC/gWChfNTV1E
-      o/Xic1vouIDvQSEkBBoj1pGYJN7MrbtTXw8AALTFfe4OALtIfeM8LhKJhAj3OiRe8BaS3h/w3x9E
-      sFeLlYDvkCD2vbtfEG6ggSbaXsfzWLfuPkzYPgAAAIA0Brk70HWEex3j7l/c/UbSLwqrSD5nLulV
-      DIwI9mri7lN3v5D0SuE1eM5HST/H1xZolLiqc8o6ewR7AAAATzAaCmiNQcK27yUW1Ogsdy8llXGq
-      XKHvV2f5Iqkk0MvL3SeSJmZ2ofA6PV0ie6rwOjFSD002Sdj2gyRCbQAA0Eapz+EHolYaqrNQ2pk4
-      fTZIvQHCvY6LodBdfKChYshK0IrWMbOhNq8AfayFwqq4hNsAAKCNpko7uwGo0lTpFmoZJGoXEdNy
-      AQDHGCVse8iquAAAABsVuTsA7GiQuwMdNpMI9wAAB0o8au/e3RlxDAAA2oyZOWgTZsukUyRseyYR
-      7gEADpeyFt4wYdsAAAB1SB2WFInbR7+kDKOfrgGAir2Q9J/l7gQAoF3iIjDniZq/ZTouAADogFni
-      9p8uxgc0Vd/31UHCtksphHv/u0LRcgAAdjVM2PYoYdsAAAC1qOFmZaobreinMmHbfQ/3UpUy+mo5
-      LfdE0v+VemMAgM64StTuR0btAQCADpmnbDzOpgCarrdBtJklDTbdvZSkH1a+9h9L+idJf0q5YfSP
-      mQ0U6kFcKPFcezMrK2pqGh8lQQPwrXgSmeru0yRRuwAAADnMlHbUzoVYuAMVcPfSzJK1b2an7t7H
-      RTtqCeB/ePJvr2Oj6I+4muZYYXRoHS4rbmdhZkNW7QS+USRqd8F7DQAAdEyp6q5R1hkkbBv9s1C6
-      a/cLpZ3621SDhG3fL//ydLXcfynpHxJuGD0Sg70Pqi/YS+FE0u/xdwEQFInaLRO1CwAAkMsscftF
-      4vbRLylHgQ4Stt1kg4Rtz5Z/eRruSdLfiPp7OJKZjRSCva74YGY3uTsBNESRqF1G7QEAgK6ZJW4/
-      5ahA9A/hXvVSTsudLf+yLtyTQv29/ydhB9BhZjaR9DZ3PxL4Lf5uQG/FGpqpRuNSLwYAAHTKsth9
-      SiyqgQrNErZdJGy7yQYJ2y6Xf9kU7knSv0jYAXRUDL+uc/cjoWsCPvTcIFXD7k64BwAAuughcftF
-      4vbRH4zcq17KlYJny788XVDjKVbPxc52DPY+qpoDxqaRge8qaPtC0sst3782M7n7sIJtAW2T6s7w
-      /fM/AgAA0EpTpb3ALxQWMQSOknjF3LO+rZhrZkXC5hfuPlv+47lw70+S/r2kv0rYIXTAjsHeK3ef
-      VLS9teGeu48qan+o7TUDCfjQV6eJ2u3NhzwAAOidUmlnNxUJ20b/PChdGN23FXNTTpn/ZtDUtmm5
-      S38l6R/T9AVdsEOwt5D0c1XBXh1iX39R6PsmTNFFHw0StcuUXAAA0FVl4vZPEo8QQr+kPC8vErbd
-      RCnDvXL1H7uEe5L01wpTdIFv7BjsFW2spRWL3xYi4ANWDXJ3AAAAoE3i1Ll54s1cJW4f/UG4V50i
-      Ydt7j9xb+pOkf662L2izLgd7S7HvhQj4AAAAAByuTNw+4R6qUiZsuzcrO5vZqaSzhJsoV/+xT7gn
-      hRp9/76yrqC1+hDsLRHwAQAAADhSmbj9MzPrTXCCdOL177Zr32Oc9Gg/LRK2/fB0YZJ9wz2JxTV6
-      r0/B3hIBHwAAAIAjlDVsY1jDNtAPZcK2+zLKNOXvWT79wiHhHnqsj8HeEgEfAAAAgEPEunsPiTfT
-      l9AE6d0lbLsv+2mRsO3y6RcI97CzPgd7SwR8AAAAAA6UMjCRwtTcvgQnSKtM2PZ5rEfXWXHqcbJ6
-      e+7+3bGEcA87Idh7RMAHAAAA4ACpwz2JqbmoQA0jTbseQqf8/T6u++IPCTeIhotp8pXCijWryXkp
-      qXT3Mv7cRAR733D3qZkVCs/VyYYfuzYzuftQkuJdtAt9Ozz3i8IS1nd9ev7Qal+e/5GDDBK1CwAA
-      0AjxGmKutCtovjSzQQxngGPcSTpP1PaVpEmitptgmLDttTcJCPd6KIZMY23+ULmU9DZ+8EwlvdzS
-      XO+CvaU9Ar5ThVBv0/P9UuH5fpA0WjfEFmiQ544JhxokaBMAAKBpJpLeJt7GSIzgw/HulG5ffWlm
-      p09XfO2C1FNytSHcY1puj5jZqZndSfpdu+1sZyLY22rHKbovtdvzfS7pdzO763oNAmCNi9wdAAAA
-      qMGkhm1cm9mghu2gw+K17jzhJoYJ285pmLDtj5sCUcK9nohhUanqRtz0Pthb2jHg28dLSSUBHxpq
-      lqjdE/Z5AM/gGAGg9eJ02fsaNjWqYRvovnHCtm8Stp3TMGHbG2f5Ee71wEqwV9V8eYK9JxIEfOci
-      4EMzzRK2XSRsG0D7McIXQFdMatgGo/dQhZQlo85imavOMLOhNpfsOtZChHu9N1K1hTAJ9tZYCfiq
-      ci7uuKFhlgvtJFIkbBsAAKAR3H2i6gYFbDOqYRvosDjSdO3qrBXp2ui9lL/P3bYahYR7HRfv1rze
-      8iMLSbeSXkn6VdJ7PT+vnjvnmz333MwVnuNfJb1ReO63ec0dNzRQqtobRaJ2AXTDIHcHAKBCKac7
-      Ll13bWQUspgkbPtlV65343st1erC0jPHDMK97htt+d6DpAt3H7r7xN3v3P1GIaDaFjpta7PvRlu+
-      997dB+5+E5/rsbsPJf2k8Foc0iaQQ6qRu+dd+XAHeizlqneDhG0DQN0mHdsOOsrd75R2YY1Rwrbr
-      NErY9v1zsycJ97rvasPXHxSm186efsPdv8TQaVPAdxaXd8aKZ5a8fh+D0+/E16DQ5oBv02sI5FIm
-      bHuYsG0A6aUs23GZsG0AqFW8BnhuFk8VzsxsVMN20G2ThG23foSpmV0p7XnK5LkfINzrsBg2bSrm
-      eLNtvvbyZ7S5FkRxaL86bFMIN9czKX58LTbNzz8hTEXDlAnbHiZsG0B6KUfuic9DAB0zqmk7b9se
-      niC7sdLWiRwlbLsOKafZz2Odzq0I97pt00qr812K4sfAabLh24PDutRpgw1f31r4cim+JpuGO7Nq
-      LhojDglPNTT/LK4yBaCdUi+4VSRuHwBqU+PoPUm6MzOuKXCQeD2bMsC6bOs1QBwZu2kGXxVGu/wQ
-      4V63FRu+PtujjU2hFHfOvzfY8PV9RjHMju8GUIuNy7BXYJSwbQBpzRK3P0zcPgDUbVTTdk6UdvYF
-      ui/16L1x2wLoOKPgbcJN7DRqTyLc67pZwraTTrsB0HiThG2fmVnKZeQBJBJHoaQ88T9nahmALonH
-      zfc1be7czCY1bQsdU8PovROlHUCQwiRx+6Ndf5Bwr9tmG75+uUcivmmEXuppN21Ubvj6TqMc42tC
-      sXC0QuKpuZI0YuVcoLXKxO0T/gPompHS3hhZdU3AhyOkHr132ZYFYOL76DzhJnYetScR7nXdtgDu
-      2RPjOMT05YZvzw7pUMfNNnz95Y4FwLe9JoSpaCLu3AFYp0zc/ktG7wHokjgialTjJgn4cJBnFoKs
-      ytum19+L/btOvJnhPj9MuNdh8Y33sOHbb7cFTnEU2WRL81kuus3sdNsJvZkVGefpl1u+N9nWr7h0
-      9qa5+g+7LMgBZDBR+ul3k4TtA0ijrGEbWz9XAaBt3H2szdduKTQ64Hvuug/5xNFk94k3M95xgEzt
-      YrD3IfFmPu6yCOoqwr3u2zay5g8zGz09OY4760ybh5h+rDtsMrOhmd1J+oukT1t+9JOkv5jZXQzM
-      ahPrZWw6yJ1Lmj29AxE/tEaSft/SdMrRUcDBaqi7IYUTT6bgAS1Sw7R9KaxKx+cjgK4Z1ry9azOb
-      Nu1mSQx1SqWvZ4bDpT4/P5FUNi3gqynYW+iA55dwr+Niqr7tBPutQhg2NbPSzFxhZz3Z8n9G1fVw
-      uzgSb6bQp01ThNd5Kel3M5vVfMdntOV7J5I+mJnH53qqEFZuW11nr3n2QAap625I0m9NH5oP4Dt1
-      jPBv9KgTANhXvDnyrubNLgch1DowYp048GEs6Q+Ffp01oV/4Xk376jLgGybezk5qCvYkaRQHDu2F
-      cK8fdkl9z7XbYg7v4xs5qXhgnyiMxDs7oqkzSZ/MrJZltePQ2V1Wu7rUbsU3h8f0B0itxhoxH7iI
-      B1plUtN2ruNo/UaNOgGAQ7n7SPVOz5VCiPJ7PJ4Oat726mymmaTXT77NDI6GqmlfXQ6QGSXezkYr
-      2UQdwd7HOEV/b4R7PeDud6omVb939+QH13iCXqraApWvFVL/OgK+G1VzkHu17zx7IIcaa8Rcx1Gv
-      gxq2BeAI8UZg6no8Sy+1pvQFALTYlepbPXfVS0nTdaWbUjCzixiazBRmM62bPXbJuV+jDVXPvvo2
-      zjasdZpunAVYKv3iGVJ4HoeH/mfCvZ6IqfqbI5r4qPAhk9RKsJdiSelz1RTwSSp03EXNK6bjomWG
-      NW3nUuGkk7u4QPNNatzW8s7+zMxuDrkQ5OIRQFPEKXnDTJs/UQjaZmY2qTpMiYHeOJZe+kMhNNlW
-      Ekpi9F5jxZt5db0+5wrrBiSflWdmg5WZhCmyiXWujlnbgHCvR+Loml+0X5HrhaQ37n7UjraHO+32
-      5nmQdKswIvFd/PsuI4fOVUMdIHf/4u6FQt/2uZMxl/QLwR7aJn6wH3MDYR8nCnX4pm1YRS3WDi1z
-      9wOo2w51f1M4k/SbpM/xGDGOYV+x4TGKF68zUbgdQINUOPvqUCcKwdsf8cbJJC5yONi1gRiQLI+1
-      d2b2RSHQe639Si8N9/hZ1Cx+3u9Smqoqr/UYPg+qbHhlNOln1TNab+nNsbP2fqioI2iJuMMM4tSV
-      K21epOJBIQQb17UybpxH/1zdv1ttKTAZ39wjbX8jXprZKI5mTMrdR7Eo7I3Ch9KmD7GPku4I9dBm
-      7j6OYds+i98c41yhpuaDwrFqUtN2nxWPRVcK7/1j6oYCbTdSPTVq1jnXfnfbZ4n6AQAHidcSA9Ub
-      MqxzFvtwLUlmJoXrxU3XiQNVe/5zYmbDJp3r4VvufhNHee5Sx78Ky/D5Ol4LTCSVh6wPEK9fruIj
-      x3n77aF19lYR7vVUPDBOpK8786ppXYHeUvzQ2rpqrMIw1a1v1uUQ9hio3Wnzm/PGzCaHrEKzr5UF
-      Bwmsc94AABhKSURBVJa1Ky6efL9M3QegRkOlm1q/ybnCdLzl+/4u3u2uVTyWFgonBnX+/kBjufsk
-      3lCs62QfADrF3Zej5Zp2HK37XGcoRlg33ZXqvw5Q3N5v0tfg+V7hht1sy/+5UAihc5+z37v7sIqG
-      +hrusaLaioaES6Mt33uQVOwTOLr7sthmqfVv2JO4zeHOPaxA/B3KOrfZMn+TuwM4jrt/iSHXTM/X
-      T6na6h28hcJ7bbr8s8qbFvH4MlA4MSjUvBNuoEluFKZhAQAOkys0aZJLMxvUMTgDh1m5DiiVd1+9
-      VDvOzR9U4boGfQ33+nxQbJw4mm3TUPOFDiwsGQ8uVwoX9+tChmszu6l7lCK2InjvgCcf7HUHfEsn
-      CtODXyqOCo6B31RhCslyFPDq358qVv4+WHkwzRbYQ7zh9kbxrjoAYD8NCk1yuxGLazQa++rO9h7A
-      9Jy+hntoluGW790cc3fG3WdxVc1N9X6uxPDuJskVBKFi8WK+UHh/NeWD/USPd/HqqgsIQFlqcgJA
-      pxCaSArXjYR7Dce++qzKgz2px6vlVr2qCo5SbPj6vIqiqc+s1lfZMFgcJ47g/Ovc/UB1Yo3MQrut
-      ZA2g+4bieAAAB3P3L+5+obDIYB+dxDquaLgYXBUK9e/w6NbdL1LMHuxtuKfNgRLqV2z4+tErxqyY
-      7Llt1I+gtYM4CQWwtHKiv8jcFQBotViA/13ufmQyzN0B7CZeBxTiOmDpXVWLZ6zT53BvmLsD+GrT
-      VMy9l7Heotxz26gf4V6HxQ+yX8VFfZUWCqsDA62xEvAxgg8AjuDuI/Xz3OqSWXjtEq8DXql/++rS
-      QtKv8T2bTJ/DPQ4KDRDn4q9V5Sq+29qKq14io/hepA5Tx7n7ncLqsh9z96Xl5gp36wfuXuUIZ6AW
-      TNkHgGqsnFv16Xh6r7AgGloklsoq1K99VQr76yC+V5Pqc7gnVTvtE+3FCq35jXJ3APVw95m7Xync
-      ad5UCxPrPUh65e4Ddx+x0jfabGUEH1N1AOAI8dzqQt2fpruQ9MbdK1+IAPVw92lP9lUpw/7a93Dv
-      pZkxFRB8OGQUR29e5+4H6uXud+4+kPRG/R2iv4uFQvjxSyy+O8ncH6AysRbPUP2cVgYAlYpT/n5S
-      NxcwuJV0wYyFbuj4viqF/bX2GTZ9D/ckacK0zHyemS5bVLWdZ6b/VlnbD3uIK+RSM6zH3H3s7qcK
-      dTgYyffoo8JzMnD3YZVlCoCmiVNVBpLeZ+4KALRaHMVXSPpF3Tivule4wTl091nuzqA6T/bVroR8
-      95J+jvtr7QOICPfCggr/CwFfVpvu1lf5mhR7bhuJxWCvFIuaQKEORxzJ96v6WZNvocdA70d3v4rP
-      CSOL0QtxFN+Nwp18puoCwBHcvYznVW29efpRIdQruMHZbXFfLdTukG91f802cIhwL/gXkv5XM/vP
-      c3ekp8oNX7+pcBvDPbeNhOICGqWk86wdQePE6bpXkn5UmLLb5aK7Dwo1R35x91MCPeDrnfyhHo8B
-      dV6UzmrcFgAkt3Lz9Bc1/+bpXGEE90/xnKjM3B/UaCXkW97ka/ognMbtrz/k7kBD/FX8838ys/8m
-      9RLF+E6p9SulnpnZ8NgaU2Y2lHS24dtMCa2Zmd0oLKDBiD1sFAOusaRxHOV5pTAC90rt3HcWkqYK
-      x7uyCScAFUh5Z3KWsO0mmCnd3elOlJp4cgy40OMx4LLiTd0rnAvcJZzy1daRCLl9Ee+TQ3X1uevq
-      75VcPO8o4w32K4WBD024yT7X4zG4zNwXiXOb7OJn8VCS4voIy0cTzv8XetxfG5cjmMKJ0qfM/Wia
-      uaQRhcvrES/c/7Lh2wuF4qmzA9seKBykNx0MfmSUTD1i3cOxmnEi0SS/NORkpjXihf7qo+qL/WPd
-      K1yALMO8GXVigOrEz5NBfFworHp/qs2fLw96XDyrjH+fcuwF0GcrQV8RH3WEJ3N9e7Oz06EqqhM/
-      +5ePOs/97xX217um76+Ee9vdK4R8Ze6OdJ2ZTbR5xdQHSXsvIb1S023Tyf5tnPqDhOKJw1jrR2eC
-      cK8ScT8b6LG+5vLPgTaP3D3E05BACndiZwphATcLAABA66zcPB0onEdtu2nynOX50jT+WYrzJFRo
-      zf4qHRf6rd6cnynsr40O854i3NvNrULIN8vdka6KF+aft/zIXNLVrm+w+Ga/0+aL+qNGBOJ5MVy9
-      iY8mDKNuKsK9msR9ct+Fehh1BwAAei1eW50+82OcM6ER9jjn71TgTLi3u4WkMfX40jGzkaS3z/zY
-      1qA1hoQjbR4FuPSO1zKdWOdwpGpHTHUV4R4AAAAA4GCEe/ubS7ppYgHFLjCzqXYb/v2gxyGz0mPd
-      nV3+731ciQcVi3f1xmpeDbQmI9wDAAAAAByM1XL3dybpdzO7Vwj5WjUPuwUKba+Tt3S+w8+s86BQ
-      OBYVikOfx3p+xCQAAAAAAKjQi9wdaLFLSX+Y2TgGG6hAnPNeKIRwVTtoYQ5sF6dTz3R8sPePR3cG
-      AAAAAICeIdw73mtJMzO7yd2RrlgJ+G4rbPZWBHuVMrMrM5sp1EmsYsGMv66gDQAAAAAAeoVwrxon
-      kn4zs5mZFbk70wXu/sXdh5J+VahzeKi5pF/dfUiwVw0zG5hZKel3sWAGAAAAAABZEe5V60zSJzMr
-      46qtOJK737n7QNIrSfd7/NePkl65+4DFT6phZqdmNpb0WSyYAQAAAABAI7BablrvJI0ZMVadWN+w
-      UFgZ9zT+KYWVc7/EP0ue82rFaecjVTP9Ft9itVwAAAAAwMEI99JbKKyqO8ndEWBfcZr5REy/TYlw
-      DwAAAABwMKblpnci6YOZTanHh7aIdfXuFIL/OoI9VsoFAAAAAOAAhHv1OVeox3dHPT40VayrN1Ko
-      q/eyxk1zLAIAAAAA4ABcUNfvpaSpmY1i/TigEcxsKGkm6W2Gzf/LDNsEAAAAAKD1CPfyOFEIUKYx
-      UAGyMbPCzKaSPogFMwAAAAAAaBXCvbzOFOrxldTjQ91iXb2JQl2988zdAQAAAAAAByDca4ZLhXp8
-      E6bqIrWVunpTSdeZuyOxmAYAAAAAAAd7Iekidyfw1bWkWQxegMqZ2ZVCqPdWzZmC+//m7gAAAAAA
-      AG31QhIjxZrlRNJbM5vFIAY4mpldmFkp6XeF6eBN0pSQEQAAAACA1nmhMIoHzXMm6fdYj2+QuS9o
-      qTgFdyLpD4Xp3wAAAAAAoENeSPqSuxPY6lLSZzMbU48P+4jTu2dqRl09AAAAAACQwAuFi38032uF
-      enw3uTuCZjOzwsxmalZdvU3+IXcHGmCWuwMAAAAAgPYyd5eZfVHzQwA8mksaunuZuyNojjh9e6J2
-      Tb9dqN/HnoW7MyIXAAAAAHCwF/HPMmcnsLczSZ/M7I56fIh19caSPqtdwZ7U72BP4tgLAAAAADgS
-      4V67vVSoxzeiHl8/xWnaM4Vp22ifMncHAAAAAADttpyWO1AY9YP2Wki6cfdJ7o4gPTMrJI0lnWfu
-      yjH+LOlvc3cis5/cfZa7EwAAAACA9nohSfHi8mPeruBIJ5I+mNk0Bj/oIDMbmNmdpE9qd7AnSf9R
-      7g5kdk+wBwAAAAA41ouVv4+z9QJVOleoxzehHl93xLp6I4URti8zd6cqfa+3N8rdAQAAAABA+5m7
-      P/7DrFT7CvJjs4VCaDt29y+5O4PDmNlQ4XXsUhj279TvkXv37l7k7gQAAAAAoP2ehnsXkv7I1x0k
-      Mleox3eXuyPYXZxePVI3A/f/U9J/krsTGf3s7tPcnQAAAAAAtN/qtFzFi813mfqCdM4k/W5mZQxw
-      0WCxrt5Eoa5eF4M9qd/B3nuCPQAAAABAVb4Zuff1i0zP7bpbhZF8TNVtmFhX70bdmoKLRw/uTsAO
-      AAAAAKjMpnDvVFKp9q/Gic0WCrX4Rrk7AsnMrhTq6p3l7ksN/kHS3+TuRAYLSQNCdQAAAABAlV6s
-      +2K8+CwkPdTaG9TpRNJbM5vF2m7IwMwu4kjZ39WPYE+S/sPcHchgIakg2AMAAAAAVG1tuCcR8PXI
-      maRPsR7fIHNfesPMTmNdvT/UvynwfZty/KAQ7FFnDwAAAABQuY3hnvRNwPe+lt4gp0v9/+3dP4tc
-      WWIF8HMF9qztNVqWNevETOEvIC0Y7MAwPZFDab6A1Zs6UStyYlB1Ypy5FBoM250YNmt9gq3+Bq3E
-      obc6M+yyVjHrxQO2r4P7uq3R6k93q6puVb3fDxpmBqnegakJdObdc5Ofl1Jmw7Fs1qSUcpRkkeRJ
-      5yg9fN07wIa9jGIPAACANfpguZe0gq/WepTkqySX649EZ0+TLIYCihUqpRyUUhZJ/jHje3ttbJZJ
-      ntVaHzuKCwAAwDq980KND/4Gt3mOyau0W3XnvYPssuG480nGd/x2rNxGDQAAwMZ89M29tw23q07S
-      /gDLfnuQtsd3Zo/v9oZdvVmSn0exl+z/kdzzJD+qtR4q9gAAANiUW5d7yfVR3cMkP0r7Ay377VHa
-      Ht/UHt/NlFIO03b1nvZNwgZcJvmq1mpbDwAAgI279bHcd35IKY+TzNJuXmW/LdOOHJ70DrKNSikH
-      af8tPOgchfVbJpkNbzMDAABAF3d6c+9ttdazWuskyXHaH3jZX/eT/KSUMh+KLNJ29UopZ0l+FsXe
-      u+zbkdzTJA8VewAAAPS2kjf3vvWBbZttmuTJSj+YbXWaZFprXfQO0sNwTPkoLpn5mG+SfNY7xAqc
-      p33f572DAAAAQLKGcu/6g9tbXdO4SGAMRnk8cdjVm8Zx9DG4TCv1TnoHAQAAgDetrdy7foACZEwu
-      0/b4znoHWSfF9a39MskPeof4BMdp5bUbcAEAANg6ay/3km8dXXy+9oexDc7TSr69ujl0+B7P4sj5
-      WLxM+x4vegcBAACA99lIuXf9sLbHN0vyaGMPpafTtHJk5994KqVMY1fvLv4ryXd6h7ilV2nf23nv
-      IAAAAPAxGy33rh/ajjXO4lbRMVimbZXNege5i1LK47TvqmPld/PrJN/tHeKGlmml3knvIAAAAHBT
-      Xcq964eXcpS2XeZtqP13meRwV96GKqU8TCv17OqNw4u0Enrn3zIFAABgXLqWe8n1jtk0ydOuQdiU
-      87SSb9E7yLv4Pq7Ur5J8v3eIj9jq7yMAAAB8TPdy78qwx3cSb0qNxda9KeVN0lHZqTdJAQAA4H22
-      pty7MuzxncTG2RhsxcaZ79xafJPks94h3mGnNyABAADgbfd6B3hbrXVea50kOU77gzj7636Sn5RS
-      LoaCbaNKKZNSyjzJz6LYG4PTJBPFHgAAAPtk697ce9OwfzZL8qR3FjbiZdqbfIt1PqSU8nmSf0ry
-      V+t8DlvjPO17ddE7CAAAAKzaVpd7V9xcOirLtH/Xs3Xs8ZVS/jnJXyf5nVV/Ntd+neS7vUOk7eod
-      1VrPegcBAACAddmJcu9KKeVxWvHjCOX+u0zbRjtZxYcNl2X8fZLfW8XnsdWWaeXwtHcQAAAAWLed
-      KveS66O6R8OPW03333layTe/y28upfxlkn9J8ierDMV7vU7yvY7PP037viw6ZgAAAICN2bly70op
-      ZZJkGnt8Y3Gr0mbY1ftpkj9fZyi2xieVwAAAALCrdrbcuzLcsjqNPb6xOE9yluQiycWbu3xD4XuQ
-      5G+S/FmSsvl4o9bjrb1l2q7eyYafCwAAAFth58u9K6WUw7Q9Pkd1YRyOs6aLVwAAAGBX7E25l3xr
-      j+957ywwMpu8Ifdl2tt6iw09DwAAALbWXpV7V4bjmbMkj/omAVboVVqpN+8dBAAAALbFvd4B1qHW
-      uqi1Pk7yZZLL3nlgz637WOwyybNa60PFHgAAAHzbXpZ7V2qt81rrJMmztIIAWL11XqLxIsmk1jpb
-      4zMAAABgZ+3lsdx3Gfb4pkmedo4C+2RdN+SeJzm0qwcAAAAfNppy78qwx3eS5IuuQYB3uUwr9ea9
-      gwAAAMAu2Otjue8y7PEdJPkq9vjgU6zyqPsyyXGtdaLYAwAAgJsb3Zt7byulTJMcJbnfOQqM1Wna
-      LbjrvpgDAAAA9s7oy73keo9vluRJ7yywI75O8oef+BnnaaXexQryAAAAwCgp995QSnmYVvLZ44P3
-      +ybJZ5/w+y/TSr2zFeUBAACA0Rrd5t6H1Fovhj2+H8ceH7zPXf+PwDLJcZKHij0AAABYDW/uvcdw
-      VPco9vjgTb9K8v07/L7TJNNa62K1cQAAAGDclHsfUUqZpB3VfdQ3Ceyk87RSb947CAAAAOwj5d4N
-      lVIO0kq+B52jQC+/TPKDG/7aZdqu3sn64gAAAADKvVsqpRymlXyO6jImt7lE4zjJrNb6eo15AAAA
-      gCj37uSNPb7nvbPAhvwmye9/5Ne8THtbb7H+OAAAAECi3Pskwx7fSZIvugaB9frYcdzLJId29QAA
-      AGDz7vUOsMtqrYta60GSL9MKDtg3v8n7i71lkme11oliDwAAAPpQ7q1ArXVea50keZZWeMC+e5Fk
-      Umud9Q4CAAAAY+ZY7ooNe3zTJE87R4FP9e9J/vitf3aedgR3sfk4AAAAwNuUe2tSSnmYdquuPT52
-      0S+S/NEbf3+ZdlnGWac8AAAAwDs4lrsmtdaLYY/vq2zfHt9/9w7A1ru6GXeZ5HjY1VPsAQAAwJbx
-      5t6GlFKmSY6S3N/A475O8j9Jfjf/X9LATf1bkj9Ncpr2tt7rznkAAACA91DubVApZZLkH5L8Rdpb
-      k/97y4/4gyT/Ofz1d5L8cFXZYPAfSf41yd+5ARcAAAC2n3Kvg1LKQdqlG/b42CaXSf621vrT3kEA
-      AACAm1HudVRKOUwr+T7vm4SRW6Zd/jJzBBcAAAB2i3Kvs1LK99K2+J73zsIovUzb1Vv0DgIAAADc
-      nnJvSwx7fLMkj/omYSRepZV6895BAAAAgLtT7m2ZYY9vluRB5yjsp2VaqXfSOwgAAADw6ZR7W2rY
-      45slud85CvvjOHb1AAAAYK8o97bYsMc3TfK0cxR223mSQ7t6AAAAsH+Ueztg2OM7SfJF1yDsmsu0
-      Um/eOwgAAACwHvd6B+Djaq2LWutBki/TChv4kGWSZ7XWiWIPAAAA9ptyb4fUWue11kmSZ2kFDrzt
-      RZJJrXXWOwgAAACwfo7l7qhhj2+W5EnvLGyF87RbcC96BwEAAAA2R7m340opD9NKPnt843SZVuqd
-      9Q4CAAAAbJ5yb0+UUh6nlXyf987CRiyTzGqt095BAAAAgH6Ue3tkOKp7NPzc7xyH9TlNMq21LnoH
-      AQAAAPpS7u2hUsokyTT2+PbNeVqpN+8dBAAAANgOyr09Vko5SCv57PHttsu0Uu+kdxAAAABguyj3
-      RqCUcpi2x+eo7u45TtvWe907CAAAALB9lHsj8cYe3/PeWbiRl2m34C56BwEAAAC2l3JvZIY9vlmS
-      R32T8B6v0kq9ee8gAAAAwPZT7o3UsMc3S/KgcxSaZVqpd9I7CAAAALA77vUOQB+11nmt9WGSZ2nF
-      Ev28SDJR7AEAAAC35c09rvb4pkmedo4yNudJDu3qAQAAAHel3OPasMd3kuSLrkH232VaqTfvHQQA
-      AADYbY7lcq3Wuqi1HiT5Mq2AYrWWSZ7VWieKPQAAAGAVlHv8lmGPb5LkOPb4VuU0bVdv1jsIAAAA
-      sD8cy+WDhj2+WZInvbPsqPO0W3AvegcBAAAA9o9yjxsppTxMK/ns8d3MZVqpd9Y7CAAAALC/HMvl
-      RmqtF8Me349jj+9DlkmOh109xR4AAACwVt7c49aGo7pHw8/9znG2yWmSaa110TsIAAAAMA7KPe6s
-      lDJJMo09vvO0Um/eOwgAAAAwLso9Plkp5SBtj+9B5yibdplW6p30DgIAAACMk3KPlSmlHKaVfGM4
-      qnucZFZrfd07CAAAADBeyj1W6o09vue9s6zJy7RbcBe9gwAAAAAo91iLYY9vluRR3yQr8yqt1Jv3
-      DgIAAABwRbnHWg17fCdJPu+b5M6Wabt6s95BAAAAAN52r3cA9lutdV5rnSR5llaU7ZIXSSaKPQAA
-      AGBbeXOPjRn2+KZJnnaO8jHnSQ7t6gEAAADbTrnHxg17fCdJvuga5LddppV6895BAAAAAG7CsVw2
-      rta6qLUeJPkqrVDrbZnkuNY6UewBAAAAu8Sbe3RXSpkmOUpyv8PjT9NuwX3d4dkAAAAAn0S5x1YY
-      9vhmSZ5s6JHnaaXexYaeBwAAALByyj22SinlIO3SjXXt8S3TdvXO1vT5AAAAABuj3GMrlVIO00q+
-      z1f0kcu0NwNnjuACAAAA+0K5x1YbSr7D3P1Nvsu0Uu9EqQcAAADsG+UeO6GUMklyMPxM8v6y71WS
-      RZJ5krlNPQAAAGCf/R9EybKFluyqbAAAAABJRU5ErkJggg==
-    )
-  )
   (image (at 72.39 271.78) (scale 0.15)
     (uuid 81b5414b-9f22-43e8-b0b3-4ea27322db1c)
     (data
@@ -6527,7 +6121,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 947b376b-6568-4d21-8520-222425040a3c)
   )
-  (text "5V/8A" (at 17.78 27.305 0)
+  (text "5V/12A" (at 17.78 27.305 0)
     (effects (font (size 1.4986 1.4986) (thickness 0.2997) bold) (justify left bottom))
     (uuid 9b7e8aa7-59cd-4940-b7c6-11df4c0ba2a5)
   )
@@ -6996,7 +6590,7 @@
     (pin "8" (uuid df4bb49f-3340-42cb-be2b-294772939107))
     (pin "9" (uuid ef2ce8b1-292f-46fa-90ea-10a3099acfea))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "IC5") (unit 1)
         )
@@ -7031,7 +6625,7 @@
     (pin "4" (uuid d3694835-3365-409c-bddc-df07e11b49d9))
     (pin "5" (uuid 2a464210-1637-48df-87c2-05f5f77e7e94))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "IC6") (unit 1)
         )
@@ -7062,7 +6656,7 @@
     )
     (pin "1" (uuid 81099514-58cd-4472-b2fa-823da52c970c))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "TP38") (unit 1)
         )
@@ -7093,7 +6687,7 @@
     )
     (pin "1" (uuid 21e63ab4-7308-4d2f-b326-4a7092c29f92))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "TP39") (unit 1)
         )
@@ -7118,7 +6712,7 @@
     )
     (pin "1" (uuid c408a0f7-81e5-43c7-a653-b190b744aeaa))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_075") (unit 1)
         )
@@ -7143,7 +6737,7 @@
     )
     (pin "1" (uuid 6976b007-9b56-4141-9a80-4ab814c49dbe))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_074") (unit 1)
         )
@@ -7168,7 +6762,7 @@
     )
     (pin "1" (uuid 555a64a3-5f49-4506-9da6-c9b4612c41f5))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_072") (unit 1)
         )
@@ -7193,7 +6787,7 @@
     )
     (pin "1" (uuid a9d62455-c68e-4cc6-8e34-6e04177a5938))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_067") (unit 1)
         )
@@ -7218,7 +6812,7 @@
     )
     (pin "1" (uuid 1e2f1916-0149-4e6f-9df1-8fe8d43fd85b))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_056") (unit 1)
         )
@@ -7243,7 +6837,7 @@
     )
     (pin "1" (uuid be345f89-4ddc-4c7f-955f-c24fa9b438b6))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_069") (unit 1)
         )
@@ -7281,7 +6875,7 @@
     (pin "1" (uuid 51b84d9a-84b5-42c1-9d84-380f7d1e31aa))
     (pin "2" (uuid 1c895722-2987-483c-8389-36c02b0954f9))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "R80") (unit 1)
         )
@@ -7316,7 +6910,7 @@
     (pin "1" (uuid 7f66df10-f137-44fb-8864-a5a67db7ccb7))
     (pin "2" (uuid 2991c059-0ebc-4435-b3f6-9fa23badfe0d))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "C34") (unit 1)
         )
@@ -7351,7 +6945,7 @@
     (pin "1" (uuid 08ef633d-7ac1-43d0-b856-a7890cd1f753))
     (pin "2" (uuid 938787bb-4dbf-46eb-abb2-fc45c38ca65f))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "R71") (unit 1)
         )
@@ -7386,7 +6980,7 @@
     (pin "1" (uuid 3f943909-11ef-4216-af94-922d85fcfd7a))
     (pin "2" (uuid 7b8012e0-e956-4c58-bb8e-a57270c9cd96))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "C42") (unit 1)
         )
@@ -7418,7 +7012,7 @@
     (pin "1" (uuid 63e84c2e-1996-4973-bae1-317e3bbbc2cd))
     (pin "2" (uuid f41a4737-649b-419e-8fc0-ae07473708b8))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "F1") (unit 1)
         )
@@ -7450,7 +7044,7 @@
     (pin "1" (uuid fb02d858-a097-46dd-846e-1dc153510e08))
     (pin "2" (uuid f1c921d0-5026-45dc-aeb9-c13e7767791d))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "F2") (unit 1)
         )
@@ -7485,7 +7079,7 @@
     (pin "1" (uuid b97027ab-07bd-4ddb-af05-7f71da740d28))
     (pin "2" (uuid cf261052-ca1c-44f7-9a5b-1fb20d4c11b3))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "C26") (unit 1)
         )
@@ -7516,7 +7110,7 @@
     )
     (pin "1" (uuid 6b80fa85-e85f-41c7-9b35-7f5c93ba8b67))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "TP30") (unit 1)
         )
@@ -7551,7 +7145,7 @@
     (pin "1" (uuid ed95d58d-d065-4de8-a3f6-2918b5972b6a))
     (pin "2" (uuid 0175e834-88f4-4f9f-9b6a-6317ffc2adc1))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "R53") (unit 1)
         )
@@ -7576,7 +7170,7 @@
     )
     (pin "1" (uuid 2a868079-a297-47a6-a3a5-6cde858affb1))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_058") (unit 1)
         )
@@ -7593,7 +7187,7 @@
     (property "Value" "C_47u_0805" (at 158.75 127 0)
       (effects (font (size 1.524 1.524)) hide)
     )
-    (property "Footprint" "jetson-nano-baseboard-footprints:0805-cap" (at 163.83 118.11 0)
+    (property "Footprint" "jetson-nano-baseboard-footprints:0603-cap" (at 163.83 118.11 0)
       (effects (font (size 1.524 1.524)) (justify left) hide)
     )
     (property "Datasheet" "" (at 158.75 123.19 0)
@@ -7605,13 +7199,13 @@
     (property "MPN" "C0805C476M9PACTU" (at 163.83 115.57 0)
       (effects (font (size 1.524 1.524)) (justify left) hide)
     )
-    (property "Val" "47u" (at 161.671 124.5362 0)
+    (property "Val" "22u/16V" (at 161.671 124.5362 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (pin "1" (uuid e6c7d652-91de-4a0c-8f32-12994570f412))
     (pin "2" (uuid 9d307a82-1892-4ef5-a776-2c15f256f55a))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "C36") (unit 1)
         )
@@ -7642,7 +7236,7 @@
     )
     (pin "1" (uuid 40cce78f-84e1-4016-9c66-92661a00e705))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "TP36") (unit 1)
         )
@@ -7667,7 +7261,7 @@
     )
     (pin "1" (uuid a260eff0-b50e-4f54-aec3-95610caed9c6))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_037") (unit 1)
         )
@@ -7692,7 +7286,7 @@
     )
     (pin "1" (uuid 32e52c4e-169c-4079-a1b8-5e99cb5e233d))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_040") (unit 1)
         )
@@ -7724,7 +7318,7 @@
     (pin "1" (uuid 0a87c5af-3007-46a8-b8fb-e87c0608dcf3))
     (pin "2" (uuid 935384cc-6713-4bd4-a421-82d7eea67abf))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "FB2") (unit 1)
         )
@@ -7759,7 +7353,7 @@
     (pin "1" (uuid 423b9484-7e92-42b8-9be7-db480cb54f57))
     (pin "2" (uuid ecee3c81-c982-42b7-a417-e55012e7f862))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "C21") (unit 1)
         )
@@ -7790,7 +7384,7 @@
     )
     (pin "1" (uuid a9a9d0af-a3f5-4b50-b852-2393730e6c8e))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "TP32") (unit 1)
         )
@@ -7825,7 +7419,7 @@
     (pin "1" (uuid 952af70b-364b-41ce-ac4d-d035ddaa48cf))
     (pin "2" (uuid 40611940-9e6a-4b35-a6fb-8e8ee326024c))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "C25") (unit 1)
         )
@@ -7850,7 +7444,7 @@
     )
     (pin "1" (uuid 07f123ac-d4ef-46c0-a22f-5e2bea183845))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_039") (unit 1)
         )
@@ -7881,7 +7475,7 @@
     )
     (pin "1" (uuid 28ddc689-daf0-4b8f-8033-d09fedc7f0f8))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "TP31") (unit 1)
         )
@@ -7906,7 +7500,7 @@
     )
     (pin "1" (uuid 62b2281e-3f12-4afc-8d41-a59959040895))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_036") (unit 1)
         )
@@ -7931,7 +7525,7 @@
     )
     (pin "1" (uuid 39933fad-8f1f-415a-abad-9f0846b2e5d3))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_046") (unit 1)
         )
@@ -7956,7 +7550,7 @@
     )
     (pin "1" (uuid 64668556-011d-48ec-8430-cd0e6814e0e3))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_048") (unit 1)
         )
@@ -7981,7 +7575,7 @@
     )
     (pin "1" (uuid 057aa544-0fa6-41e1-bab4-5dde38b112f3))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_049") (unit 1)
         )
@@ -8016,7 +7610,7 @@
     (pin "1" (uuid e79621ec-ad2a-406d-9434-2d650444ce64))
     (pin "2" (uuid 8364a360-a054-4fe1-8f00-9a87211d0497))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "R69") (unit 1)
         )
@@ -8041,7 +7635,7 @@
     )
     (pin "1" (uuid 2f1d8f09-c5b5-474a-850c-2a416839ebf5))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_077") (unit 1)
         )
@@ -8076,7 +7670,7 @@
     (pin "1" (uuid eb5c3c84-241f-4706-8d21-4f5982ace350))
     (pin "2" (uuid d818c4db-34ef-44e5-998b-00e9fcccf51b))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "C47") (unit 1)
         )
@@ -8101,7 +7695,7 @@
     )
     (pin "1" (uuid 9fb27bb0-aae0-4c78-a5e5-ce2643f415d2))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_079") (unit 1)
         )
@@ -8136,7 +7730,7 @@
     (pin "1" (uuid eb129e05-5f75-497d-8a71-f9368fdb64ad))
     (pin "2" (uuid a765b90c-ecdf-4c0b-abce-f811acac71ff))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "C44") (unit 1)
         )
@@ -8161,7 +7755,7 @@
     )
     (pin "1" (uuid a010452c-4d7f-4012-88a4-cea639d6e457))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_073") (unit 1)
         )
@@ -8196,7 +7790,7 @@
     (pin "1" (uuid 95fcb477-8fe6-4ab5-bc22-bbfb42b448eb))
     (pin "2" (uuid 2470b7f1-afb3-4f2c-8982-fe05f9cbb51a))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "R70") (unit 1)
         )
@@ -8231,7 +7825,7 @@
     (pin "1" (uuid 2e700eec-48ec-432f-91b4-ed087aed30b0))
     (pin "2" (uuid 687a4fae-f09a-47aa-abbe-b157b1bcb0ef))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "C23") (unit 1)
         )
@@ -8266,7 +7860,7 @@
     (pin "1" (uuid 5c5df875-38a8-400e-925c-b42b10073f5a))
     (pin "2" (uuid 7971e3aa-ed15-4477-ad6b-da2fb1449e89))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "C29") (unit 1)
         )
@@ -8304,7 +7898,7 @@
     (pin "1" (uuid c2e27df7-7ceb-47a4-9901-c50042bffb74))
     (pin "2" (uuid d5c51050-0ce5-4a29-99bd-02d67233fc6a))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "R67") (unit 1)
         )
@@ -8329,7 +7923,7 @@
     )
     (pin "1" (uuid 578976f4-f443-4fe2-bb4c-c1c2929617f1))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_059") (unit 1)
         )
@@ -8354,7 +7948,7 @@
     )
     (pin "1" (uuid 2475db7d-50ba-478e-8aad-08723a4aea6e))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_044") (unit 1)
         )
@@ -8389,7 +7983,7 @@
     (pin "1" (uuid 60bab68f-1519-49be-acd8-261d330cc90e))
     (pin "2" (uuid 3916e9ec-5fde-47dc-b1a5-70e6dbe07c4f))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "C30") (unit 1)
         )
@@ -8424,7 +8018,7 @@
     (pin "1" (uuid 2a1f16c8-2021-489d-8c91-a6c271e6a68c))
     (pin "2" (uuid 54b731cc-3c43-426a-8c00-bc4bdc0c2c49))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "C35") (unit 1)
         )
@@ -8460,7 +8054,7 @@
     (pin "5" (uuid e82dc3fa-2bcb-45a7-b5ad-fa734ad602d2))
     (pin "6" (uuid daa746a4-3741-4234-9ee9-d57aac05c184))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "U6") (unit 1)
         )
@@ -8485,7 +8079,7 @@
     )
     (pin "1" (uuid 6b0063ee-41b8-4bcd-ad7f-07940333c130))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_038") (unit 1)
         )
@@ -8510,7 +8104,7 @@
     )
     (pin "1" (uuid 68df9712-ef25-45b8-840a-1111a35f24e5))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_080") (unit 1)
         )
@@ -8535,7 +8129,7 @@
     )
     (pin "1" (uuid cb5dcbaf-5908-4047-81aa-5102f9852b7f))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_054") (unit 1)
         )
@@ -8570,7 +8164,7 @@
     (pin "4" (uuid b84ae1f4-dc17-4efd-bf15-d73ec6e320c4))
     (pin "5" (uuid 0fa93f60-a4d5-43f3-9caa-e0383a8b809a))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "U2") (unit 1)
         )
@@ -8595,7 +8189,7 @@
     )
     (pin "1" (uuid 14b8c962-1f26-4f83-8859-c3d1468a2dc4))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_057") (unit 1)
         )
@@ -8627,7 +8221,7 @@
     (pin "1" (uuid d0c8fa32-3562-4294-9ea8-e499f6f43473))
     (pin "2" (uuid 48e3b1b4-99d0-4f52-a4cf-85476a92db89))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "L3") (unit 1)
         )
@@ -8662,7 +8256,7 @@
     (pin "1" (uuid 6ef0cd7f-7446-4de5-b190-2a05b1e33f45))
     (pin "2" (uuid 74ce34dd-b5b0-4091-8ab0-3a0630de2247))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "R72") (unit 1)
         )
@@ -8697,7 +8291,7 @@
     (pin "1" (uuid 593fb7b5-96de-4b4f-b69c-4730f0adb593))
     (pin "2" (uuid b3253744-60c9-43fd-aea7-d84f6c42f5c0))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "R73") (unit 1)
         )
@@ -8722,7 +8316,7 @@
     )
     (pin "1" (uuid ee1f6b45-5e67-40f9-9056-b4a1c04c5cef))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_061") (unit 1)
         )
@@ -8747,7 +8341,7 @@
     )
     (pin "1" (uuid 03af6f1a-7cb4-4982-84f3-d627e12ba73a))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_042") (unit 1)
         )
@@ -8778,7 +8372,7 @@
     )
     (pin "1" (uuid 08c7c6ea-0a51-4302-ab71-65038126cb2e))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "TP33") (unit 1)
         )
@@ -8813,7 +8407,7 @@
     (pin "1" (uuid b0265a15-282d-42e4-9eb6-0da9ec7d892e))
     (pin "2" (uuid 708991a1-16e0-4923-b280-ef7b3e9832ce))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "C27") (unit 1)
         )
@@ -8838,7 +8432,7 @@
     )
     (pin "1" (uuid bd6e949f-20ad-4dfc-a7eb-0f27525725c0))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_051") (unit 1)
         )
@@ -8873,7 +8467,7 @@
     (pin "1" (uuid 7f3811d5-e296-4a9f-a909-d3773ea03889))
     (pin "2" (uuid 0b52c508-d396-43d6-8744-27a90bd3d00f))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "R55") (unit 1)
         )
@@ -8908,7 +8502,7 @@
     (pin "1" (uuid fa611330-135c-4021-80ab-8bc9b568ec0e))
     (pin "2" (uuid 223f2530-161b-4c5e-a395-730f150ad800))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "R81") (unit 1)
         )
@@ -8946,7 +8540,7 @@
     (pin "1" (uuid 2e30298c-9738-4414-b8db-0bc87c12eac0))
     (pin "2" (uuid 9d697561-9a2a-43ed-be07-86a03c91f5e5))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "R68") (unit 1)
         )
@@ -8971,7 +8565,7 @@
     )
     (pin "1" (uuid 9b0132b3-f950-4e82-9c48-f96dca110646))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_033") (unit 1)
         )
@@ -9003,7 +8597,7 @@
     (pin "1" (uuid 55d4edc5-4870-45bc-bab6-6fbfb8ae810b))
     (pin "2" (uuid 79dd57b4-0620-440c-8d34-4004f58d47fa))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "FB3") (unit 1)
         )
@@ -9037,7 +8631,7 @@
     (pin "3" (uuid 192f2a02-5f16-41cb-a560-b612681a637f))
     (pin "4" (uuid e3c2d666-bd43-466e-a9d3-0729d8ae6f84))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "J6") (unit 1)
         )
@@ -9072,7 +8666,7 @@
     (pin "4" (uuid 2e0d5a06-cbb6-4574-85cb-85872bbcbc71))
     (pin "5" (uuid 48c409b0-1d2e-4708-8f77-9db858afa00f))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "U3") (unit 1)
         )
@@ -9104,7 +8698,7 @@
     (pin "1" (uuid 041b3737-1b5c-4e21-86d9-c05987074c0b))
     (pin "2" (uuid 566784ee-e164-4da8-94ef-21839f622a36))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "L4") (unit 1)
         )
@@ -9129,7 +8723,7 @@
     )
     (pin "1" (uuid 8b3f4322-c370-425f-8338-aac60d16d34e))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_043") (unit 1)
         )
@@ -9160,7 +8754,7 @@
     )
     (pin "1" (uuid 499c5235-2c66-40ac-8af1-82cd724a04ff))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "TP34") (unit 1)
         )
@@ -9195,7 +8789,7 @@
     (pin "1" (uuid d4b3b6b6-95fa-44e9-bf33-578b042baeb4))
     (pin "2" (uuid e012c0eb-85bb-413d-9197-42784238105c))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "C28") (unit 1)
         )
@@ -9220,7 +8814,7 @@
     )
     (pin "1" (uuid 4840b2e5-f233-43b4-a333-6a3c44500a30))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_052") (unit 1)
         )
@@ -9255,7 +8849,7 @@
     (pin "1" (uuid c5ff8f8c-228a-4c57-82ba-d8f4565af1ab))
     (pin "2" (uuid 88a37c9c-8f8d-438f-86a5-45fef74f1427))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "R56") (unit 1)
         )
@@ -9280,7 +8874,7 @@
     )
     (pin "1" (uuid 03d512ea-0249-4493-b577-5d32a0ed14dc))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_034") (unit 1)
         )
@@ -9315,7 +8909,7 @@
     (pin "1" (uuid 6aa8f196-ec76-43ba-8e6c-a2cfa1983ca1))
     (pin "2" (uuid dc61c33f-c10c-4a0b-8ac7-5ba88db46738))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "C16") (unit 1)
         )
@@ -9350,7 +8944,7 @@
     (pin "1" (uuid 5bc9ff4c-c311-4988-9708-5504b88bd71f))
     (pin "2" (uuid a04894f9-358c-4ace-aa81-ab688c887ef7))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "C17") (unit 1)
         )
@@ -9381,7 +8975,7 @@
     )
     (pin "1" (uuid d7121ed9-fa46-4369-a06c-cbd155f7a764))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "TP37") (unit 1)
         )
@@ -9412,7 +9006,7 @@
     )
     (pin "1" (uuid 41d49a77-2c7e-423f-91e1-d142242f2447))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "TP40") (unit 1)
         )
@@ -9443,7 +9037,7 @@
     )
     (pin "1" (uuid df8da36a-d99f-4ac3-8eab-13f50ae599ec))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "TP41") (unit 1)
         )
@@ -9475,7 +9069,7 @@
     (pin "A" (uuid d9061fd4-007c-4116-85dc-4d23dac965f0))
     (pin "C" (uuid dcc4b2bf-ed3a-41bb-9902-e734dc45f93d))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "D8") (unit 1)
         )
@@ -9500,7 +9094,7 @@
     )
     (pin "1" (uuid 1139896f-c670-46fb-8f7c-ea8bab11ce89))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_078") (unit 1)
         )
@@ -9525,7 +9119,7 @@
     )
     (pin "1" (uuid 926a9bb9-3ed9-41db-a784-4d4430f59eed))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_076") (unit 1)
         )
@@ -9550,7 +9144,7 @@
     )
     (pin "1" (uuid 31e1713a-791e-45a9-8b3b-1cf32fb8c68a))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_065") (unit 1)
         )
@@ -9575,7 +9169,7 @@
     )
     (pin "1" (uuid 36636442-57b2-4515-bdbf-a33f4708a1e4))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_070") (unit 1)
         )
@@ -9608,7 +9202,7 @@
     (pin "2" (uuid 39ab1cf0-3d70-4c48-8659-1e207d00f372))
     (pin "3" (uuid dd7f7fd8-bbe0-4e7a-a569-54f75382343d))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "T6") (unit 1)
         )
@@ -9643,7 +9237,7 @@
     (pin "1" (uuid 9592b149-6f39-4e5f-94d9-7f64f20728dd))
     (pin "2" (uuid 9415ea45-2493-44e3-865b-3b908c7aa0da))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "R77") (unit 1)
         )
@@ -9678,7 +9272,7 @@
     (pin "1" (uuid ce39edb9-937f-44b6-872c-bb335b0a1144))
     (pin "2" (uuid 322db0d3-3887-44fc-9ce5-974bcbe9179b))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "R76") (unit 1)
         )
@@ -9712,7 +9306,7 @@
     (pin "3" (uuid 7d2c3a91-dabf-4013-9a37-a24bda226847))
     (pin "5" (uuid 6f299245-d470-432c-9034-0f16bb1e532a))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "IC4") (unit 1)
         )
@@ -9747,7 +9341,7 @@
     (pin "1" (uuid 4153f0f9-df30-4c48-816f-6b4a22988c8d))
     (pin "2" (uuid 68359ab4-d36c-4a81-8960-70428c22824f))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "R79") (unit 1)
         )
@@ -9782,7 +9376,7 @@
     (pin "1" (uuid 3c4c9c34-bed3-4572-81a7-7e77cf9b8c56))
     (pin "2" (uuid 6b6857e7-1bfe-4b0f-adaf-2ec97d087544))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "R74") (unit 1)
         )
@@ -9817,7 +9411,7 @@
     (pin "1" (uuid 029434b0-9b3e-4b23-a455-c8941c82a1ec))
     (pin "2" (uuid a1d4d44e-260a-4cca-8b2b-e8fd36f62200))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "R75") (unit 1)
         )
@@ -9852,7 +9446,7 @@
     (pin "1" (uuid b9df285a-7184-412d-a244-8085036a2d5b))
     (pin "2" (uuid eff6d793-5009-4fa5-81ac-8b5a092e43e3))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "R57") (unit 1)
         )
@@ -9887,7 +9481,7 @@
     (pin "1" (uuid 31af3adf-9578-455b-a983-04b67460a287))
     (pin "2" (uuid ac0b5f7c-e53a-4d5a-aec6-f6eac6911bd1))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "C43") (unit 1)
         )
@@ -9922,7 +9516,7 @@
     (pin "1" (uuid 1ad2fd8a-fbe9-4286-a694-57a385ffa251))
     (pin "2" (uuid 42d9c5d4-d767-493b-b874-9bd80c37f91a))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "R78") (unit 1)
         )
@@ -9957,7 +9551,7 @@
     (pin "1" (uuid 4ac83faa-cc08-40d4-a201-e30890ad7e87))
     (pin "2" (uuid adc84156-adce-4652-80d0-93660e32167c))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "C45") (unit 1)
         )
@@ -9995,7 +9589,7 @@
     (pin "1" (uuid 2cdd46ad-44cc-4848-ada1-abc155085136))
     (pin "2" (uuid cdc7898f-5396-48aa-a428-b76fa657c9e7))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "R82") (unit 1)
         )
@@ -10030,7 +9624,7 @@
     (pin "1" (uuid c4e155c6-55e9-4554-be34-c05727af1746))
     (pin "2" (uuid 1a57f68d-e84f-46e8-89c4-8a25ca7a4a1c))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "C46") (unit 1)
         )
@@ -10071,7 +9665,7 @@
     (pin "1" (uuid 64af9417-3e3c-41ae-bc34-4013aa74bc79))
     (pin "2" (uuid 13beea5b-93ae-49d9-9b1b-1c3fe2e276b7))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "L5") (unit 1)
         )
@@ -10096,7 +9690,7 @@
     )
     (pin "1" (uuid 65be8fde-e284-42b9-aa9f-c7ee4d6ffce6))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_053") (unit 1)
         )
@@ -10131,7 +9725,7 @@
     (pin "1" (uuid 175e9356-787b-4e29-9901-4840dedd6af6))
     (pin "2" (uuid 609353be-953c-4ff0-8296-ffa669d4d9eb))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "R64") (unit 1)
         )
@@ -10166,7 +9760,7 @@
     (pin "1" (uuid b578bbdf-33e7-4d76-953f-ca7fd31caa0c))
     (pin "2" (uuid 46077b58-cbff-4da5-a7e0-078f3a9ff2b6))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "R58") (unit 1)
         )
@@ -10191,7 +9785,7 @@
     )
     (pin "1" (uuid 01f97a65-6c6d-4e7d-8a83-f98922dadc63))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_047") (unit 1)
         )
@@ -10216,7 +9810,7 @@
     )
     (pin "1" (uuid 2c86ec01-c965-44b4-b99e-ee514b1b62e0))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_050") (unit 1)
         )
@@ -10230,7 +9824,7 @@
     (property "Reference" "U4" (at 100.33 125.3236 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "LM62440-Q1" (at 100.33 127.635 0)
+    (property "Value" "LM61460-Q1" (at 100.33 127.635 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "jetson-nano-baseboard-footprints:VQFN-14-HR" (at 96.52 128.27 0)
@@ -10245,22 +9839,22 @@
     (property "MPN" "LMQ62440BPPQRJRRQ1" (at 96.52 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "14" (uuid 8a545636-1dc7-4257-b2ef-3c71de47e9a1))
-    (pin "1" (uuid 6a7b9b49-6911-4961-a216-079a71682082))
-    (pin "10" (uuid dbe29eeb-4a80-46af-a4ea-9c2d48398f09))
-    (pin "11" (uuid 7d70f14a-2d27-47ee-b7bc-5b58e7ffcd99))
-    (pin "12" (uuid 3ea26429-b5ab-4582-b725-2b27df71d57b))
-    (pin "13" (uuid 479018ec-827e-4543-b4c0-a00914957f16))
-    (pin "2" (uuid df7f998f-99e1-42f2-8e5b-4a8322a324f9))
-    (pin "3" (uuid 763eb6bf-1c13-44f0-9ce8-49c068f7dd2e))
-    (pin "4" (uuid 7467e65a-e412-4ee4-9ed7-830f2f9dc036))
-    (pin "5" (uuid ff8930de-0b3b-4b0d-8d41-1ac3c7865f7a))
-    (pin "6" (uuid c1f8fc16-9ba4-4033-a3d4-cab7c6ab0b6b))
-    (pin "7" (uuid 5d56c650-dd24-4e01-8ff1-823eafb120a6))
-    (pin "8" (uuid 633c65a8-a54b-4c53-9f08-6431ddb6f587))
-    (pin "9" (uuid e69966d8-3427-477a-b1a5-06fdd82577d0))
+    (pin "14" (uuid 0083dbf3-9cbf-4e06-bef3-ba951c26c0a0))
+    (pin "1" (uuid 9f76c607-b78e-454e-a26d-4ebf642a56ef))
+    (pin "10" (uuid aebb4c46-d0c1-411c-99f4-6e4dd67fde8a))
+    (pin "11" (uuid bd802a3d-0dc3-4457-a058-abb0782cb54d))
+    (pin "12" (uuid 51875ade-6390-43ad-a984-afe3d75c3d2e))
+    (pin "13" (uuid a2d5f5da-ad3e-4a04-a52e-6e4273923a01))
+    (pin "2" (uuid aa1c9fab-38d5-4348-a0c5-f521ca65b31c))
+    (pin "3" (uuid fe4e9976-a68a-4d31-b4db-f069ebd8a608))
+    (pin "4" (uuid 4f4444ec-29f6-46b0-af37-649629b6fc22))
+    (pin "5" (uuid c4840e2c-6f86-4df0-acc8-888de7b6f982))
+    (pin "6" (uuid 2643cb54-4d73-40c4-8389-15d8481d2241))
+    (pin "7" (uuid fd5a08a5-da07-4cf9-80fc-a3df4fa577fc))
+    (pin "8" (uuid e9480e1e-9df1-4510-8254-d20e33244b84))
+    (pin "9" (uuid 89db7609-0fe9-46d7-ae31-ae5c419525c5))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "U4") (unit 1)
         )
@@ -10274,7 +9868,7 @@
     (property "Reference" "U5" (at 119.38 36.6522 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "SIC477ED-T1-GE3" (at 119.38 38.9636 0)
+    (property "Value" "SIC476ED-T1-GE3" (at 119.38 38.9636 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "jetson-nano-baseboard-footprints:SIC47XED-T1-GE3" (at 119.38 66.04 0)
@@ -10286,7 +9880,7 @@
     (property "Manufacturer" "VISHAY" (at 119.38 66.04 0)
       (effects (font (size 1.27 1.27)) (justify left bottom) hide)
     )
-    (property "MPN" "SIC477ED-T1-GE3" (at 119.38 41.275 0)
+    (property "MPN" "SIC476ED-T1-GE3" (at 119.38 41.275 0)
       (effects (font (size 1.27 1.27)))
     )
     (pin "1" (uuid a5f8fc80-739d-45b5-86f2-c4094ee28383))
@@ -10318,7 +9912,7 @@
     (pin "7" (uuid ce3496be-4f25-4167-9863-e529c8f1df9d))
     (pin "9" (uuid bfbf28c5-29e9-4074-a45c-a90dadc5282f))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "U5") (unit 1)
         )
@@ -10356,7 +9950,7 @@
     (pin "1" (uuid 2ca00551-5876-453a-b874-f1fbbb961618))
     (pin "2" (uuid 907d7e4c-0da0-430c-910d-3f599f31076e))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "R65") (unit 1)
         )
@@ -10394,7 +9988,7 @@
     (pin "1" (uuid 0745d245-0805-42bd-83e4-b4c57242b50f))
     (pin "2" (uuid 3e955591-00e7-46f6-a6d2-2a1672549495))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "C33") (unit 1)
         )
@@ -10419,7 +10013,7 @@
     )
     (pin "1" (uuid 9684e483-19e6-4150-8f5e-76d4f606327a))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_055") (unit 1)
         )
@@ -10436,7 +10030,7 @@
     (property "Value" "C_10u_0805" (at 147.32 127 0)
       (effects (font (size 1.524 1.524)) hide)
     )
-    (property "Footprint" "jetson-nano-baseboard-footprints:0805-cap" (at 152.4 118.11 0)
+    (property "Footprint" "jetson-nano-baseboard-footprints:0603-cap" (at 152.4 118.11 0)
       (effects (font (size 1.524 1.524)) (justify left) hide)
     )
     (property "Datasheet" "" (at 147.32 123.19 0)
@@ -10448,13 +10042,13 @@
     (property "MPN" "160R15X106KV4E" (at 152.4 115.57 0)
       (effects (font (size 1.524 1.524)) (justify left) hide)
     )
-    (property "Val" "10u" (at 150.241 124.5362 0)
+    (property "Val" "22u/16V" (at 150.241 124.5362 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (pin "1" (uuid b6773375-299d-45bc-afdd-ee315bf09643))
     (pin "2" (uuid e7dc6e56-4f00-4673-8718-caee7efb7e81))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "C31") (unit 1)
         )
@@ -10479,7 +10073,7 @@
     )
     (pin "1" (uuid 2f451747-7687-41b3-94f2-a80f5d23edf3))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_041") (unit 1)
         )
@@ -10508,13 +10102,13 @@
     (property "MPN" "C3216X7R1H106K160AE" (at 67.31 135.89 0)
       (effects (font (size 1.524 1.524)) (justify left) hide)
     )
-    (property "Val" "10u/50V" (at 65.151 144.8562 0)
+    (property "Val" "22u/50V" (at 65.151 144.8562 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (pin "1" (uuid b020cc6b-038a-4530-82d6-22487e55dcc6))
     (pin "2" (uuid 16e3491f-403b-44cc-90d7-255ecc943efa))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "C22") (unit 1)
         )
@@ -10539,7 +10133,7 @@
     )
     (pin "1" (uuid c20278b1-1b18-4007-a678-de3da4fae908))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_045") (unit 1)
         )
@@ -10568,13 +10162,13 @@
     (property "MPN" "C3216X7R1H106K160AE" (at 81.28 135.89 0)
       (effects (font (size 1.524 1.524)) (justify left) hide)
     )
-    (property "Val" "10u/50V" (at 79.121 144.8562 0)
+    (property "Val" "100u/50V" (at 79.121 144.8562 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (pin "1" (uuid 1977eb1a-6517-4cdd-b241-169e49fe8894))
     (pin "2" (uuid 54d048b0-ada7-4c5a-ba45-9148c6cd4b7e))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "C24") (unit 1)
         )
@@ -10609,7 +10203,7 @@
     (pin "1" (uuid 97fc4408-8e9e-48c1-8819-b8ecd7755c80))
     (pin "2" (uuid 220ace6c-1127-4558-93d8-4a8a019621ff))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "R62") (unit 1)
         )
@@ -10640,7 +10234,7 @@
     )
     (pin "1" (uuid 7a212616-c0c9-4da6-8b17-e62c83a4cb57))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "TP35") (unit 1)
         )
@@ -10675,7 +10269,7 @@
     (pin "1" (uuid 9fbff01e-f2a5-43eb-b921-91e125667d8e))
     (pin "2" (uuid c05fd4bb-dce6-440a-9ac8-9b88438d3fdf))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "C41") (unit 1)
         )
@@ -10710,7 +10304,7 @@
     (pin "1" (uuid 1acf450f-7c22-4a95-8b4e-d12dee2ba740))
     (pin "2" (uuid 70b15d13-9856-47e7-b61b-17ab3386cd99))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "C40") (unit 1)
         )
@@ -10735,7 +10329,7 @@
     )
     (pin "1" (uuid 38848e5d-fc63-4bfb-a197-dcdc8c2c3516))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_064") (unit 1)
         )
@@ -10760,7 +10354,7 @@
     )
     (pin "1" (uuid 846a14df-619e-4de8-ad57-aae1095ee439))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_066") (unit 1)
         )
@@ -10795,7 +10389,7 @@
     (pin "1" (uuid 7eb9e23b-718d-4efe-b1df-caecc0802d7a))
     (pin "2" (uuid ebfe0f26-4268-412b-92f7-dfb5284823da))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "R60") (unit 1)
         )
@@ -10833,7 +10427,7 @@
     (pin "1" (uuid 3f9e302c-ec23-460d-95d5-09e26e1e836c))
     (pin "2" (uuid c0ceac4d-8eb1-4712-a696-f90473bab017))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "R54") (unit 1)
         )
@@ -10868,7 +10462,7 @@
     (pin "1" (uuid fdf65189-74f7-42e4-ae91-e86e9cdc31c7))
     (pin "2" (uuid f206613d-7b3b-4c84-8e18-d2c1b0f8bc9b))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "R61") (unit 1)
         )
@@ -10903,7 +10497,7 @@
     (pin "1" (uuid b8daea90-6bd2-4909-a042-22e54bd838c5))
     (pin "2" (uuid fc6a0733-5bdb-41fd-9d2e-a921cf93d2eb))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "C39") (unit 1)
         )
@@ -10928,7 +10522,7 @@
     )
     (pin "1" (uuid d22ae7d7-96b2-4df6-b727-befd10b82ba1))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_063") (unit 1)
         )
@@ -10963,7 +10557,7 @@
     (pin "1" (uuid 94e12bb1-7ae1-4fa7-b7e9-1232451c5337))
     (pin "2" (uuid 710306f5-f441-4e97-b1e5-fc35b3de77c6))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "C37") (unit 1)
         )
@@ -10988,7 +10582,7 @@
     )
     (pin "1" (uuid bb9ec208-a7a9-40e1-9f40-321a1f37724c))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_060") (unit 1)
         )
@@ -11026,7 +10620,7 @@
     (pin "1" (uuid 33dd5edc-0dd5-4811-8b27-70a51c594ee5))
     (pin "2" (uuid 09e6bcd7-0312-4638-bafb-bc6bdedad0fa))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "R59") (unit 1)
         )
@@ -11051,7 +10645,7 @@
     )
     (pin "1" (uuid 47acf2ca-b443-4522-9ff3-bb478639cfbe))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_035") (unit 1)
         )
@@ -11089,7 +10683,7 @@
     (pin "1" (uuid 13aa17f0-daca-4d8c-acba-0ca314631f72))
     (pin "2" (uuid 99b84770-5119-4531-8035-4dc9587032c0))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "R66") (unit 1)
         )
@@ -11124,7 +10718,7 @@
     (pin "1" (uuid bdff8359-faaf-47ac-8eeb-015e96c6fd30))
     (pin "2" (uuid 77dff119-160d-4423-b0b7-3b36904ce727))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "C19") (unit 1)
         )
@@ -11159,7 +10753,7 @@
     (pin "1" (uuid ef26e01f-a50f-4965-978b-d75be2b8ce10))
     (pin "2" (uuid 6da4158c-67d8-4d9b-b57c-1ca8496c6839))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "C18") (unit 1)
         )
@@ -11200,7 +10794,7 @@
     (pin "1" (uuid 67464faf-0305-4a4e-934a-2aaa8cb0b5ad))
     (pin "2" (uuid 15451546-fa8a-4882-bd24-adca7a837585))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "L6") (unit 1)
         )
@@ -11238,7 +10832,7 @@
     (pin "1" (uuid e9a6e344-1476-4c9b-89e2-d8be0f3e3914))
     (pin "2" (uuid 00fdec17-dca8-448f-991c-61d4a173c208))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "C32") (unit 1)
         )
@@ -11276,7 +10870,7 @@
     (pin "1" (uuid 1307e8e8-a52e-4673-99d4-b4b5c5f75860))
     (pin "2" (uuid 8fb02cec-a43d-4b1c-b945-1c522c761424))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "C38") (unit 1)
         )
@@ -11314,9 +10908,34 @@
     (pin "1" (uuid 22df92cc-4b19-4486-a107-ea8bbb6f50b5))
     (pin "2" (uuid 0049335d-cd6e-4abe-abf1-e3387e65f4f2))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "C20") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "jetson-nano-baseboard:GND") (at 181.737 127 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 00244be6-26e9-4b25-a6d0-9c58c6805b18)
+    (property "Reference" "#GND_0138" (at 181.737 127 0)
+      (effects (font (size 0.508 0.508)) hide)
+    )
+    (property "Value" "GND" (at 181.8132 130.6322 0)
+      (effects (font (size 0.762 0.762)))
+    )
+    (property "Footprint" "" (at 181.737 127 0)
+      (effects (font (size 1.778 1.778)) hide)
+    )
+    (property "Datasheet" "" (at 181.737 127 0)
+      (effects (font (size 1.778 1.778)) hide)
+    )
+    (pin "1" (uuid 1cdb5794-923c-4e15-9ba9-893107baf61f))
+    (instances
+      (project "V1.1_version_control_final"
+        (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
+          (reference "#GND_0138") (unit 1)
         )
       )
     )
@@ -11349,7 +10968,7 @@
     (pin "1" (uuid 2a15e8a1-7f70-4d1e-9463-a39a39bede57))
     (pin "2" (uuid 7429ff07-3440-4ddd-bcfe-2b10e2d2da42))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "R63") (unit 1)
         )
@@ -11381,9 +11000,79 @@
     (pin "1" (uuid cada6446-c7e6-4216-bbd0-78d73c085347))
     (pin "2" (uuid 334be80a-9c19-45a9-81f2-23f93eea69c4))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "D6") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "jetson-nano-baseboard:C_10u_1206_50V") (at 48.26 143.637 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 1aa822d3-a1b0-4315-98a3-1a47fcaa50a8)
+    (property "Reference" "C96" (at 51.181 142.494 0)
+      (effects (font (size 1.524 1.524)) (justify left))
+    )
+    (property "Value" "C_10u_1206_50V" (at 48.26 147.447 0)
+      (effects (font (size 1.524 1.524)) hide)
+    )
+    (property "Footprint" "jetson-nano-baseboard-footprints:1206-cap" (at 53.34 138.557 0)
+      (effects (font (size 1.524 1.524)) (justify left) hide)
+    )
+    (property "Datasheet" "" (at 48.26 143.637 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer" "TDK" (at 53.34 133.477 0)
+      (effects (font (size 1.524 1.524)) (justify left) hide)
+    )
+    (property "MPN" "C3216X7R1H106K160AE" (at 53.34 136.017 0)
+      (effects (font (size 1.524 1.524)) (justify left) hide)
+    )
+    (property "Val" "22u/50V" (at 51.181 144.9832 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (pin "1" (uuid 0d140c8a-fcda-4c7a-9377-457bb12a06d9))
+    (pin "2" (uuid 1c0a4196-bcbc-4a4d-9783-bc6fbaaf1dac))
+    (instances
+      (project "V1.1_version_control_final"
+        (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
+          (reference "C96") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "jetson-nano-baseboard:C_47u_0805") (at 171.069 123.19 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 1c2641aa-7af4-422e-9148-371af7e4133a)
+    (property "Reference" "C98" (at 173.99 122.047 0)
+      (effects (font (size 1.524 1.524)) (justify left))
+    )
+    (property "Value" "C_47u_0805" (at 171.069 127 0)
+      (effects (font (size 1.524 1.524)) hide)
+    )
+    (property "Footprint" "jetson-nano-baseboard-footprints:0603-cap" (at 176.149 118.11 0)
+      (effects (font (size 1.524 1.524)) (justify left) hide)
+    )
+    (property "Datasheet" "" (at 171.069 123.19 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer" "KEMET" (at 176.149 113.03 0)
+      (effects (font (size 1.524 1.524)) (justify left) hide)
+    )
+    (property "MPN" "C0805C476M9PACTU" (at 176.149 115.57 0)
+      (effects (font (size 1.524 1.524)) (justify left) hide)
+    )
+    (property "Val" "22u/16V" (at 173.99 124.5362 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (pin "1" (uuid 33b24b78-63fc-42de-9773-b734dc8bb4ad))
+    (pin "2" (uuid de94c1e8-cd34-4ca4-9809-151e0d9130e4))
+    (instances
+      (project "V1.1_version_control_final"
+        (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
+          (reference "C98") (unit 1)
         )
       )
     )
@@ -11413,7 +11102,7 @@
     (pin "1" (uuid 983e89c5-fc66-4d65-b0b7-55bfc6289e9b))
     (pin "2" (uuid 844fdb5f-3a1d-45d4-9083-3e7fe5b3d2b0))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "D5") (unit 1)
         )
@@ -11438,7 +11127,7 @@
     )
     (pin "1" (uuid 3a496b75-d7ca-46aa-9f98-7546598c3357))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#FLG05") (unit 1)
         )
@@ -11470,7 +11159,7 @@
     (pin "1" (uuid 12e04a4a-bb92-42b9-a183-befff7f073bd))
     (pin "2" (uuid a60830e1-2b2c-428e-8411-edba4ecfaa16))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "D7") (unit 1)
         )
@@ -11502,9 +11191,69 @@
     (pin "1" (uuid ee3cdd52-b6c4-4a51-9f33-71f1f223f7b4))
     (pin "2" (uuid 0b552fa8-dd68-456f-ac3d-a54f9dc367a7))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "F3") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "jetson-nano-baseboard:C_47u_0805") (at 181.737 123.19 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 5bcd9a40-8ab8-4078-ae5f-f5367776b035)
+    (property "Reference" "C123" (at 184.658 122.047 0)
+      (effects (font (size 1.524 1.524)) (justify left))
+    )
+    (property "Value" "C_47u_0805" (at 181.737 127 0)
+      (effects (font (size 1.524 1.524)) hide)
+    )
+    (property "Footprint" "jetson-nano-baseboard-footprints:0603-cap" (at 186.817 118.11 0)
+      (effects (font (size 1.524 1.524)) (justify left) hide)
+    )
+    (property "Datasheet" "" (at 181.737 123.19 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer" "KEMET" (at 186.817 113.03 0)
+      (effects (font (size 1.524 1.524)) (justify left) hide)
+    )
+    (property "MPN" "C0805C476M9PACTU" (at 186.817 115.57 0)
+      (effects (font (size 1.524 1.524)) (justify left) hide)
+    )
+    (property "Val" "22u/16V" (at 184.658 124.5362 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (pin "1" (uuid f9a55ecb-b65d-4da2-8390-4584be8846d0))
+    (pin "2" (uuid 526223e5-cc86-4725-bb25-dd6efb352c02))
+    (instances
+      (project "V1.1_version_control_final"
+        (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
+          (reference "C123") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "jetson-nano-baseboard:GND") (at 48.26 147.447 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 680f1c6b-3ae5-4554-8153-3b70aaa0ea93)
+    (property "Reference" "#GND_0136" (at 48.26 147.447 0)
+      (effects (font (size 0.508 0.508)) hide)
+    )
+    (property "Value" "GND" (at 48.3362 151.0792 0)
+      (effects (font (size 0.762 0.762)))
+    )
+    (property "Footprint" "" (at 48.26 147.447 0)
+      (effects (font (size 1.778 1.778)) hide)
+    )
+    (property "Datasheet" "" (at 48.26 147.447 0)
+      (effects (font (size 1.778 1.778)) hide)
+    )
+    (pin "1" (uuid efe3db74-ec57-45e9-8076-df764ebe95a2))
+    (instances
+      (project "V1.1_version_control_final"
+        (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
+          (reference "#GND_0136") (unit 1)
         )
       )
     )
@@ -11527,9 +11276,59 @@
     )
     (pin "1" (uuid 401f0d83-6e42-4788-86ad-04db9ba3382e))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_068") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "XT30PW-M:XT30UPB-M") (at 203.962 256.667 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 933f4198-2e54-4900-b2c3-71bb21e4c2de)
+    (property "Reference" "U9" (at 204.597 247.015 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "XT30UPB-M" (at 204.597 249.555 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "jetson-nano-baseboard-footprints:XT30UPB-M" (at 203.962 256.667 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Datasheet" "" (at 203.962 256.667 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MF" "amass" (at 203.962 256.667 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Description" "\nSocket; DC supply; XT30; male; PIN: 2; on PCBs; THT; yellow; 15A; 500V\n" (at 203.962 256.667 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Package" "None" (at 203.962 256.667 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Price" "None" (at 203.962 256.667 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "SnapEDA_Link" "https://www.snapeda.com/parts/XT30UPB-M/AMASS/view-part/?ref=snap" (at 203.962 256.667 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MP" "XT30UPB-M" (at 203.962 256.667 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Availability" "Not in stock" (at 203.962 256.667 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Check_prices" "https://www.snapeda.com/parts/XT30UPB-M/AMASS/view-part/?ref=eda" (at 203.962 256.667 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (pin "P$1" (uuid 19d359cb-683d-4a1d-bcb1-04813d8547f6))
+    (pin "P$2" (uuid 81983e7e-46cb-4b5f-853d-507f939bf369))
+    (instances
+      (project "V1.1_version_control_final"
+        (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
+          (reference "U9") (unit 1)
         )
       )
     )
@@ -11552,7 +11351,7 @@
     )
     (pin "1" (uuid 14cc0722-785e-41b9-8d06-3d45afeec8c7))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#FLG010") (unit 1)
         )
@@ -11577,7 +11376,7 @@
     )
     (pin "1" (uuid 58865858-f171-45c6-a3df-3edf7348f7e9))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#FLG08") (unit 1)
         )
@@ -11602,42 +11401,9 @@
     )
     (pin "1" (uuid b1576c28-8ca1-464a-bc77-c889b9588b04))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#FLG06") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "jetson-nano-baseboard:DC_SOCKET") (at 208.534 256.667 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid dd8d5e7e-96cc-4941-afb5-487c19bcf119)
-    (property "Reference" "J5" (at 204.597 250.952 0)
-      (effects (font (size 1.524 1.524)))
-    )
-    (property "Value" "DC_SOCKET" (at 208.534 256.667 0)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Footprint" "jetson-nano-baseboard-footprints:DC_SOCKET" (at 208.534 256.667 0)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Datasheet" "" (at 208.534 256.667 0)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Manufacturer" "Multicomp" (at 208.534 256.667 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "MPN" "MJ-179PH" (at 208.534 256.667 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid a3bc8d3d-3c3b-4860-a1f6-2c00e1371fb7))
-    (pin "2" (uuid ef76e8c2-40f6-4390-a163-172feb0754aa))
-    (pin "3" (uuid a67b39be-02b2-42d1-bc17-57e0120652df))
-    (instances
-      (project "V1.1"
-        (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
-          (reference "J5") (unit 1)
         )
       )
     )
@@ -11660,7 +11426,7 @@
     )
     (pin "1" (uuid 4488f187-4bfb-4694-a97f-dc54648ef476))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#FLG09") (unit 1)
         )
@@ -11685,7 +11451,7 @@
     )
     (pin "1" (uuid 9fa1132b-2cce-40af-b324-ea4f396b69ed))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_071") (unit 1)
         )
@@ -11710,9 +11476,34 @@
     )
     (pin "1" (uuid 43a247c4-4d70-4433-8b11-cd48125299ab))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#FLG07") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "jetson-nano-baseboard:GND") (at 171.069 127 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid f92fab93-a270-45fb-af44-f9a2fb28e1ef)
+    (property "Reference" "#GND_0137" (at 171.069 127 0)
+      (effects (font (size 0.508 0.508)) hide)
+    )
+    (property "Value" "GND" (at 171.1452 130.6322 0)
+      (effects (font (size 0.762 0.762)))
+    )
+    (property "Footprint" "" (at 171.069 127 0)
+      (effects (font (size 1.778 1.778)) hide)
+    )
+    (property "Datasheet" "" (at 171.069 127 0)
+      (effects (font (size 1.778 1.778)) hide)
+    )
+    (pin "1" (uuid c1b70f56-48d0-499c-97d7-e6b7dcc2b597))
+    (instances
+      (project "V1.1_version_control_final"
+        (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
+          (reference "#GND_0137") (unit 1)
         )
       )
     )
@@ -11735,7 +11526,7 @@
     )
     (pin "1" (uuid a8c9d0d2-5f2c-49d7-9957-a9467b42364d))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
           (reference "#GND_062") (unit 1)
         )

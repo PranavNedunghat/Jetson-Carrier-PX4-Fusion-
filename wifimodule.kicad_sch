@@ -4,6 +4,14 @@
 
   (paper "A4")
 
+  (title_block
+    (title "Jetson Xavier/Orin NX + PX4 Board")
+    (date "2023-09-28")
+    (rev "1.0")
+    (company "NYU ARPL")
+    (comment 1 "https://wp.nyu.edu/arpl/")
+  )
+
   (lib_symbols
     (symbol "Connector:Bus_M.2_Socket_E" (in_bom yes) (on_board yes)
       (property "Reference" "J" (at -22.86 46.99 0)
@@ -1004,7 +1012,7 @@
     (pin "1" (uuid e607ce8c-d532-42c0-91fb-14807ad06921))
     (pin "2" (uuid 4a725a14-9cb7-4c6b-8bb4-7922341b5cef))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/9a1170cd-5c8e-46c5-be1f-5e1d7c269927"
           (reference "R170") (unit 1)
         )
@@ -1095,12 +1103,12 @@
     (pin "8" (uuid 1589fe52-5d8f-4c65-8fda-20157979851d))
     (pin "9" (uuid f3a5b6f3-45e6-483b-b64b-789ae1c5a87a))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e"
           (reference "J27") (unit 1)
         )
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/9a1170cd-5c8e-46c5-be1f-5e1d7c269927"
-          (reference "J27") (unit 1)
+          (reference "Wifi1") (unit 1)
         )
       )
     )
@@ -1124,7 +1132,7 @@
     (pin "1" (uuid a5e42d14-1e96-4fac-8c9f-b83dcbde5609))
     (pin "2" (uuid fca90d8e-90dc-4608-9965-ef13265581ab))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/9a1170cd-5c8e-46c5-be1f-5e1d7c269927"
           (reference "R169") (unit 1)
         )
@@ -1150,7 +1158,7 @@
     (pin "1" (uuid c4da8662-7d98-4c5a-a397-3744b45744f0))
     (pin "2" (uuid ef5273d9-b466-496c-8654-657235ab58a8))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/9a1170cd-5c8e-46c5-be1f-5e1d7c269927"
           (reference "R167") (unit 1)
         )
@@ -1176,7 +1184,7 @@
     (pin "1" (uuid c08e78fa-5d3e-4978-8874-af8b417ac294))
     (pin "2" (uuid 32515a21-32c8-473a-9551-5a1c9b69b4c8))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/9a1170cd-5c8e-46c5-be1f-5e1d7c269927"
           (reference "C121") (unit 1)
         )
@@ -1201,7 +1209,7 @@
     )
     (pin "1" (uuid 58ef1ca1-2c82-4df5-affa-444cfaf73aa7))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608e1758"
           (reference "#GND_082") (unit 1)
         )
@@ -1230,7 +1238,7 @@
     (pin "1" (uuid bc456bb7-30a8-48af-aaba-d80b47c79595))
     (pin "2" (uuid e4fac8b1-3766-46ac-9f71-13d73842fbfe))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/9a1170cd-5c8e-46c5-be1f-5e1d7c269927"
           (reference "R166") (unit 1)
         )
@@ -1256,7 +1264,7 @@
     (pin "1" (uuid 279b7302-5aa4-4b05-96e7-fc71c2c5ca44))
     (pin "2" (uuid 38f13de1-e78c-4423-a52d-57c3d2839cd5))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/9a1170cd-5c8e-46c5-be1f-5e1d7c269927"
           (reference "D31") (unit 1)
         )
@@ -1282,7 +1290,7 @@
     (pin "1" (uuid b3941232-4cd6-4000-a029-6d09ab7bddbd))
     (pin "2" (uuid a4298101-caa8-4662-82c9-64748a143c25))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/9a1170cd-5c8e-46c5-be1f-5e1d7c269927"
           (reference "D29") (unit 1)
         )
@@ -1307,7 +1315,7 @@
     )
     (pin "1" (uuid ea49e895-8718-487a-80e8-ec542f4cf4e4))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/9a1170cd-5c8e-46c5-be1f-5e1d7c269927"
           (reference "#PWR073") (unit 1)
         )
@@ -1333,7 +1341,7 @@
     (pin "1" (uuid 1c95a3da-b24d-4962-9286-16589018f1f0))
     (pin "2" (uuid 0d66078b-47fe-406d-b860-49596f9d15cb))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/9a1170cd-5c8e-46c5-be1f-5e1d7c269927"
           (reference "C122") (unit 1)
         )
@@ -1359,7 +1367,7 @@
     (pin "1" (uuid 6762b774-0ab2-4c0a-b27e-decd15b8bd53))
     (pin "2" (uuid ffd8de60-779c-4d18-b9c2-83de22d35b7a))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/9a1170cd-5c8e-46c5-be1f-5e1d7c269927"
           (reference "R171") (unit 1)
         )
@@ -1390,7 +1398,7 @@
     )
     (pin "1" (uuid cc4988f2-a8db-4a39-be46-2d23bfb19024))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608e1758"
           (reference "SP7") (unit 1)
         )
@@ -1418,7 +1426,7 @@
     )
     (pin "1" (uuid c0c90a9d-f8b4-4c7f-9528-6181b982c85c))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/9a1170cd-5c8e-46c5-be1f-5e1d7c269927"
           (reference "#PWR072") (unit 1)
         )
@@ -1444,7 +1452,7 @@
     (pin "1" (uuid 4b9591a3-86ce-45ff-806a-d3d17f633720))
     (pin "2" (uuid 9b35b450-c63d-4c71-a5c0-0d2fe11e05dc))
     (instances
-      (project "V1.1"
+      (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/9a1170cd-5c8e-46c5-be1f-5e1d7c269927"
           (reference "D30") (unit 1)
         )
