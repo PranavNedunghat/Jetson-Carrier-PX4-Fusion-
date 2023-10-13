@@ -10738,7 +10738,7 @@
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "NxtPX4:01x10_MP_sh1.0_Hori" (at 401.32 379.73 0)
-      (effects (font (size 1.27 1.27)) hide)
+      (effects (font (size 1.27 1.27)))
     )
     (property "Datasheet" "~" (at 401.32 379.73 0)
       (effects (font (size 1.27 1.27)) hide)
