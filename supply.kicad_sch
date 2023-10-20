@@ -10767,7 +10767,7 @@
     (property "Reference" "L6" (at 167.64 55.88 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Value" "IHLP3232DZER3R3M01" (at 167.64 58.42 0)
+    (property "Value" "\nIHLP3232DZER2R2M01" (at 167.64 58.42 0)
       (effects (font (size 1.524 1.524)))
     )
     (property "Footprint" "jetson-nano-baseboard-footprints:IHLP3232DZ" (at 191.77 50.8 0)
@@ -10788,11 +10788,11 @@
     (property "Size" "8.64x8.18" (at 171.45 48.895 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Val" "3u3/9.2A" (at 167.64 62.23 0)
+    (property "Val" "2u2/10.5 A" (at 167.64 62.23 0)
       (effects (font (size 1.27 1.27)))
     )
-    (pin "1" (uuid 67464faf-0305-4a4e-934a-2aaa8cb0b5ad))
-    (pin "2" (uuid 15451546-fa8a-4882-bd24-adca7a837585))
+    (pin "1" (uuid 7dd0248b-04ec-4392-8ad8-5544ffa29133))
+    (pin "2" (uuid 88023a1f-35aa-46e9-8353-32c203c09cbc))
     (instances
       (project "V1.1_version_control_final"
         (path "/9df9f3e2-e127-4935-b743-4d95c8ce9b2e/00000000-0000-0000-0000-0000608dc6e9"
